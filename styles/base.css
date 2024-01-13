@@ -1,33 +1,3 @@
-body {
-    background-color: whitesmoke;
-}
-
-body {
-    max-width: 700px;
-    margin-left: 20rem;
-}
-
-nav a {
-    color: white;
-    background-color: blue;
-    display: block;
-    font-size: 25px;
-}
-
-h2,
-h3 {
-    font-size: 30px;
-}
-
-ul {
-    list-style-type: none;
-    font-size: 30px;
-}
-
-header {
-    max-height: 200px;
-}
-
 header,
 footer {
     background-color: blue;
@@ -35,12 +5,14 @@ footer {
     text-align: center;
 }
 
-footer {
-    font-size: 20px;
+body {
+    background-color: whitesmoke;
+    max-width: 700px;
+    margin-left: 20rem;
 }
 
-body {
-    text-align: center;
+header {
+    max-height: 200px;
 }
 
 header img {
@@ -51,9 +23,34 @@ header img {
     border: 1px solid black;
 }
 
+body {
+    text-align: center;
+}
+
+footer {
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    background-color: blue;
+    display: block;
+    font-size: 25px;
+}
+
 h1 {
     text-align: center;
     font-size: 50px;
     height: 210px;
     position: center;
+}
+
+h2,
+h3 {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 30px;
 }
