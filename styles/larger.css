@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-template-rows: auto;
+        gap: 30px;
+        max-width: 100%;
+        align-items: flex-start flex-end;
+    
+    }
+    nav {
+        flex-direction: row;
+    }
+    h2{
+        margin:10px;
+    }
+
+    nav a { 
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card{
+        border: 2px solid black;
+    }
+}

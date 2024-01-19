@@ -1,55 +1,70 @@
 header,
 footer {
     background-color: blue;
-    color: white;
+    color: antiquewhite;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body {
-    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    background-color:antiquewhite;
     max-width: 700px;
-    margin-left: 20rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-align: center;
+
 }
 
-header {
-    max-height: 200px;
+main {
+    display: flex;
+    flex-direction: column;
 }
-
 header img {
     width: 120px;
     height: auto;
-    margin: 10px;
-    float: left;
     border: 1px solid black;
-}
-
-body {
-    text-align: center;
 }
 
 footer {
     font-size: 20px;
 }
 
-nav a {
-    color: white;
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: blue;
-    display: block;
-    font-size: 25px;
+}
+
+nav a {
+    color: antiquewhite;
 }
 
 h1 {
-    text-align: center;
-    font-size: 50px;
-    height: 210px;
+    display: flex;
+    align-items: center;
 }
 
 h2,
 h3 {
     font-size: 30px;
+    text-align: center;
 }
 
 ul {
     list-style-type: none;
     font-size: 30px;
+}
+
+.card{
+    border: 2px solid black;
+    background: blue;
+    color: antiquewhite;
+}
+.card a{
+    color:antiquewhite
 }
