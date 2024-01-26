@@ -55,6 +55,10 @@ ul {
     font-size: 30px;
 }
 
+li {
+    list-style: none;
+}
+
 .card {
     border: 2px solid black;
     background: blue;
@@ -73,4 +77,53 @@ ul {
 #logo {
     height: 30px;
     width: auto;
+}
+
+#hamburger {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 768px;
+
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+
+}
+
+.navigation li a:hover,
+.navigation li a:active {
+    color: yellow;
+}
+
+.show li {
+    display: block;
+}
+
+.show li a {
+    display: block;
+}
+
+#hamburger::before {
+    font-size: 2rem;
+    content: "☰";
+}
+#hamburger.show::before {
+    font-size: 2rem;
+    content: "X";
 }
