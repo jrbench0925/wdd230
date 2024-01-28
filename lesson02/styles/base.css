@@ -6,11 +6,18 @@ body {
     align-items: center;
 }
 
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 10px;
+}
+
 header, footer {
     background-color: blue;
     color:  white;
     padding: 3%;
     text-align: center;
+    justify-content: center;
 }
 
 a {
