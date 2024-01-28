@@ -1,8 +1,9 @@
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     main {
-        grid-template-columns: 1 fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    main div:nth-child(3){
+
+    main div:nth-child(3) {
         grid-column: span 2;
     }
 }

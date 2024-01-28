@@ -6,15 +6,16 @@ body {
     align-items: center;
 }
 
-main{
+main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px 10px;
 }
 
-header, footer {
+header,
+footer {
     background-color: blue;
-    color:  white;
+    color: white;
     padding: 3%;
     text-align: center;
     justify-content: center;
@@ -23,6 +24,7 @@ header, footer {
 a {
     color: white;
 }
+
 h3 {
     margin: 0;
     text-align: left;
@@ -38,7 +40,7 @@ main {
     border-radius: 8px;
     padding: 20px;
     margin: 0 1%;
-    width: 30%;
+    width: auto;
 }
 
 .card img {
