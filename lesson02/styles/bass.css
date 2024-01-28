@@ -13,21 +13,21 @@ header, footer {
     text-align: center;
 }
 
+a {
+    color: white;
+}
 h3 {
     margin: 0;
     text-align: left;
 }
 
 main {
-    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-
-
+    padding: 25px;
 }
 
 .card {
-    background-color: blue;
+    background-color: #0000ff;
     border-radius: 8px;
     padding: 20px;
     margin: 0 1%;
