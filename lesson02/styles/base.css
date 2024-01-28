@@ -53,7 +53,7 @@ main {
     width: auto;
 }
 
-#logo {
+#logo, #avs {
     height: 30px;
     width: auto;
 }
