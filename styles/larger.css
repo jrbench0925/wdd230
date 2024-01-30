@@ -3,30 +3,6 @@
         max-width: 1000px;
     }
 
-    main {
-        gap: 30px;
-        max-width: 100%;
-        align-items: flex-start flex-end;
-
-    }
-
-    nav {
-        flex-direction: row;
-    }
-    nav li {
-        display: inline-block;
-        padding-inline-start: 10px;
-    }
-
-    h2 {
-        margin: 10px;
-    }
-
-    nav a {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
     .card {
         border: 1px solid black;
     }
@@ -37,15 +13,17 @@
         grid-gap: 10px;
     }
 
-    #hamburger {
-        display: none;
-    }
-
     .navigation {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
     }
 
     .navigation li {
-        display: block;
+        display: grid;
+    }
+
+    #hamburger {
+        display: none;
     }
 }
