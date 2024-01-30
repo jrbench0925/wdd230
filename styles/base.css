@@ -71,7 +71,6 @@ li {
 
 .navigation {
     display: grid;
-    list-style: none;
     margin: 0 auto;
     padding: 0;
 }
@@ -85,7 +84,7 @@ li {
 }
 
 .navigation li a:hover {
-    color: yellow;
+    color: #ffff00;
 }
 
 .show li {
