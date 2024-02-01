@@ -9,139 +9,143 @@
     font-family: 'Montserrat';
 }
 
-header,
-footer {
-    font-family: 'Montserrat';
-    background-color: #0000ff;
-    color: #faebd7;
-    text-align: center;
-    align-items: center;
-}
+@media only screen and (max-width: 767px) {
 
-body {
-    background-color: #faebd7;
-    margin: 0 auto;
-    text-align: center;
-}
+    header,
+    footer {
+        font-family: 'Montserrat';
+        background-color: #0000ff;
+        color: #faebd7;
+        text-align: center;
+        align-items: center;
+    }
 
-header img {
-    width: 120px;
-    height: auto;
-    border: 1px solid #000000;
-}
+    body {
+        background-color: #faebd7;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-footer {
-    font-size: 20px;
-}
+    header img {
+        width: 120px;
+        height: auto;
+        border: 1px solid #000000;
+    }
 
-nav {
-    background-color: #0000ff;
-}
+    footer {
+        font-size: 20px;
+    }
 
-nav a {
-    color: #faebd7;
-    font-size: 25px;
-}
+    nav {
+        background-color: #0000ff;
+    }
 
-h2,
-h3 {
-    font-size: 30px;
-    text-align: center;
-    background-color: #000080;
-}
+    nav a {
+        color: #faebd7;
+        font-size: 25px;
+    }
 
-ul {
-    list-style-type: none;
-    font-size: 30px;
-}
+    h2,
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        background-color: #000080;
+    }
 
-li {
-    list-style: none;
-}
+    ul {
+        list-style-type: none;
+        font-size: 30px;
+    }
 
-.card {
-    display: grid;
-    grid-template-columns: 20% 70% 10%;
-    grid-template-rows: 10% 90%;
-    border: 2px solid antiquewhite;
-    background: #0000ff;
-    color: #faebd7;
-    text-align: center;
-}
+    li {
+        list-style: none;
+    }
 
-.card h3{
-    grid-column: 1 / 4;
-    font-size: 25px;
-}
+    .card {
+        display: grid;
+        grid-template-columns: 20% 70% 10%;
+        grid-template-rows: 10% 90%;
+        border: 2px solid antiquewhite;
+        background: #0000ff;
+        color: #faebd7;
+        text-align: center;
+    }
 
-.card:nth-child(2) {
-    grid-template-rows: 30% 70%;
-}
+    .card h3 {
+        grid-column: 1 / 4;
+        font-size: 25px;
+    }
 
-.card ul {
-    grid-column: 2 / 3;
-    text-align: left;
-}
+    .card:nth-child(2) {
+        grid-template-rows: 30% 70%;
+    }
 
-.card a {
-    color: #faebd7;
-}
+    .card ul {
+        grid-column: 2 / 3;
+        text-align: left;
+    }
 
-.footerimg {
-    height: 25px;
-    width: auto;
-}
+    .card a {
+        color: #faebd7;
+    }
+
+    .footerimg {
+        height: 25px;
+        width: auto;
+    }
 
 
-#hamburger {
-    display: block;
-    font-size: 2rem;
-    font-weight: 600;
-}
+    #hamburger {
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+    }
 
-.navigation {
-    display: grid;
-    margin: 0 auto;
-    padding: 0;
-}
+    .navigation {
+        display: grid;
+        margin: 0 auto;
+        padding: 0;
+    }
 
-.navigation li {
-    display: none;
-}
+    .navigation li {
+        display: none;
+    }
 
-.navigation li a {
-    text-decoration: none;
-}
+    .navigation li a {
+        text-decoration: none;
+    }
 
-.navigation li a:hover {
-    color: #ffff00;
-}
+    .navigation li a:hover {
+        color: #ffff00;
+    }
 
-.show li {
-    display: block;
-}
+    .show li {
+        display: block;
+    }
 
-.show li a {
-    display: block;
-}
+    .show li a {
+        display: block;
+    }
 
-#hamburger::before {
-    font-size: 2rem;
-    content: "☰";
-}
-#hamburger.show::before {
-    font-size:2rem;
-    content: "X";
-}
+    #hamburger::before {
+        font-size: 2rem;
+        content: "☰";
+    }
 
-.map {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    margin-bottom: 5px;
-}
+    #hamburger.show::before {
+        font-size: 2rem;
+        content: "X";
+    }
 
-.map iframe {
-    grid-column: 2 / 3;
-    height: auto;
-    width: 100%;
+    .map {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        margin-bottom: 5px;
+    }
+
+    .map iframe {
+        grid-column: 2 / 3;
+        height: auto;
+        width: 100%;
+    }
 }
