@@ -34,11 +34,6 @@
         background-color: blue;
     }
 
-    #copyright,
-    #lastModified {
-        background-color: #0000ff;
-    }
-
     header img {
         width: 120px;
         height: auto;
