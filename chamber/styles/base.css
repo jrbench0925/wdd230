@@ -6,7 +6,8 @@ header {
     margin: 10px;
     background-color: #046A38;
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
 }
 
 header img {
@@ -37,19 +38,38 @@ footer {
     text-align: center;
 }
 
+.headergrid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+        "a b"
+        "a b"
+        "c d"
+        "c d";
+
+}
+
+.headergrid h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.headergrid nav {
+    grid-column: 2 / -2;
+
+}
+
 .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
     margin-top: 110px;
 }
 
 .navigation li {
+    display: inline;
     border: solid;
     justify-content: space-between;
-    padding: 20px;
-    margin: 10px;
     list-style: none;
+    font-size: 30px;
+    padding: 20px;
 }
 
 .logo {
