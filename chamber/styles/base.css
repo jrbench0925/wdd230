@@ -112,7 +112,7 @@ footer {
     }
 
     .headergrid h1 {
-        text-align: left;
+        text-align: start;
         font-size: 25px;
     }
 
@@ -160,6 +160,10 @@ footer {
 
     .card h3 {
         text-align: center;
+    }
+
+    .card:nth-child(2) {
+        grid-column: 1 / span 2;
     }
 
     .card:nth-child(3) {
