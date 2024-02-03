@@ -63,11 +63,6 @@ header {
     width: auto;
 }
 
-.eye-catcher {
-    max-width: 99.5%;
-
-}
-
 .headergrid {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
