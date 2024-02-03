@@ -21,8 +21,26 @@ header {
     grid-template-columns: 3fr 3fr;
 }
 
+.card:first-child {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #006400;
+    font-size: 30px;
+}
+
+.card:nth-child(4) {
+    grid-column: 1 / span 2;
+}
+
 .card {
-    border: 2px solid #000000;
+    border: solid #000000;
     background: #046A38;
     color: #FFFFFF;
     margin: 10px;
@@ -80,7 +98,7 @@ footer {
 
 @media only screen and (max-width: 400px) {
 
-    .headergrid{
+    .headergrid {
         height: auto;
         width: auto;
     }
@@ -122,7 +140,7 @@ footer {
 
     .show li a {
         display: block;
-        font-size:15px ;
+        font-size: 15px;
 
     }
 
