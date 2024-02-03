@@ -18,46 +18,52 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
 </head>
 
 <body>
     <header class="headergrid">
-        <img src="images/water-tower.jpg" alt="Chamber Logo">
+        <img src="images/water-tower.webp" alt="Chamber Logo">
         <h1>Blackfoot Chamber of Commerce</h1>
         <nav>
+            <div id="hamburger"></div>
             <ul class="navigation">
-                <li>Home</li>
-                <li>Join</li>
-                <li>Events</li>
-                <li>About</li>
-                <li>Contact Us</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-    <img src="images/blackfoot.jpg" alt="City of Blackfoot" class="eye">
-    <div class="cardsdiv">
-        <section class="card">
-            <h3>Current Events go here</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, odit, ipsam nulla quis dolorum alias excepturi possimus ratione et explicabo facilis cumque recusandae, sit numquam doloremque. Aut suscipit voluptas obcaecati.</p>
-        </section>
-        <section class="card">
-            <h3>Company Spotlights</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur error adipisci vel, maiores eaque, officia suscipit excepturi aliquid velit iure minus maxime saepe odit aliquam qui beatae dolorum odio omnis.</p>
-        </section>
-        <section class="card">
-        <h3>Weather</h3>
-        <p>weather content goes here</p>
-        </section>
-    </div>
+        <img src="images/blackfoot.webp" alt="City of Blackfoot" class="eye-catcher">
+        <div class="cardsdiv">
+            <section class="card">
+                <h3>Current Events go here</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, odit, ipsam nulla quis dolorum
+                    alias excepturi possimus ratione et explicabo facilis cumque recusandae, sit numquam doloremque. Aut
+                    suscipit voluptas obcaecati.</p>
+            </section>
+            <section class="card">
+                <h3>Company Spotlights</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur error adipisci vel, maiores
+                    eaque, officia suscipit excepturi aliquid velit iure minus maxime saepe odit aliquam qui beatae
+                    dolorum odio omnis.</p>
+            </section>
+            <section class="card">
+                <h3>Weather</h3>
+                <p>weather content goes here</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="copyright"></span> Jeff Bench | Idaho, USA
             <img class="logo" src="../images/idaho_flag.webp" alt="Idaho Flag" />
         </p>
-        <p>BYU-Idaho WDD 230 Chamber of Commerce Project</p>
+        <p>BYU-Idaho | WDD 230 | Chamber of Commerce Project</p>
         <p>Last Modified <span id="lastModified"></span></p>
     </footer>
     <script src="../scripts/getdates.js"></script>

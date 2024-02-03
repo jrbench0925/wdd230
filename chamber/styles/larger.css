@@ -1,0 +1,75 @@
+@media only screen and (min-width: 768px) {
+
+    #hamburger {
+        display: none;
+    }
+    
+    header {
+        margin: 10px;
+        background-color: #046A38;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 50% 50%;
+    }
+
+    header img {
+        margin: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .cardsdiv {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+    }
+
+    .card {
+        border: 2px solid #000000;
+        background: #046A38;
+        color: #FFFFFF;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer {
+        margin: 10px;
+        background-color: #046A38;
+        text-align: center;
+    }
+
+    .headergrid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+        height: auto;
+    }
+
+    .headergrid h1 {
+        font-size: 50px;
+        text-align: center;
+        grid-column: 2 / span 5;
+    }
+
+    .headergrid nav {
+        grid-column: 3 / 6;
+    }
+
+    .navigation {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .navigation li {
+        display: inline;
+        list-style: none;
+        font-size: 30px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .logo {
+        height: 30px;
+        width: auto;
+    }
+}

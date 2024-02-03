@@ -1,0 +1,45 @@
+@media only screen and (max-width: 767px) and (min-width: 400px) {
+
+    *{
+        margin-left:3px;
+    }
+    #hamburger {
+        display: none;
+    }
+
+    .headergrid h1{
+        font-size: 30px;
+    }
+
+    .headergrid ul {
+        font-size: 10px;
+    }
+
+    .navigation li {
+        display: inline;
+        list-style: none;
+        margin: 5px;
+
+    }
+
+    .navigation a{
+        font-size: 20px;
+    }
+
+    .eye-catcher {
+        margin-left: 10px;
+    }
+
+    .card h3{
+        font-size: 20px;
+    }
+
+    .card p{
+        font-size: 15px;
+    }
+
+    footer p, span{
+        font-size: 15px;
+    }
+
+}

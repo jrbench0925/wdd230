@@ -1,5 +1,11 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
     color: white;
+    font-size: 20px;
 }
 
 header {
@@ -8,14 +14,6 @@ header {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 50% 50%;
-}
-
-header img {
-    margin: 10px;
-}
-
-.eye {
-    max-width: 99.5%;
 }
 
 .cardsdiv {
@@ -32,47 +30,117 @@ header img {
     padding-right: 10px;
 }
 
+.logo {
+    height: 20px;
+    width: auto;
+}
+
+.eye-catcher {
+    max-width: 99.5%;
+}
+
+.headergrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: auto;
+}
+
+.headergrid h1 {
+    font-size: 50px;
+    text-align: center;
+    grid-column: 2 / span 5;
+}
+
+header img {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.headergrid nav {
+    grid-column: 3 / 6;
+}
+
 footer {
     margin: 10px;
     background-color: #046A38;
     text-align: center;
 }
 
-.headergrid {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-areas:
-        "a b"
-        "a b"
-        "c d"
-        "c d";
+.navigation a {
 
+    text-decoration: none;
 }
 
-.headergrid h1 {
-    font-size: 50px;
-    text-align: center;
+.navigation a:hover {
+    background-color: #006400;
 }
 
-.headergrid nav {
-    grid-column: 2 / -2;
 
-}
+@media only screen and (max-width: 400px) {
 
-.navigation {
-    margin-top: 110px;
-}
+    .headergrid{
+        height: auto;
+        width: auto;
+    }
 
-.navigation li {
-    display: inline;
-    border: solid;
-    justify-content: space-between;
-    list-style: none;
-    font-size: 30px;
-    padding: 20px;
-}
+    .headergrid img {
+        display: none;
+    }
 
-.logo {
-    height: 30px;
-    width: auto;
+    .headergrid h1 {
+        text-align: left;
+        font-size: 25px;
+    }
+
+    #hamburger {
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .navigation {
+        display: grid;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation li a {
+        text-decoration: none;
+
+    }
+
+    .show li {
+        display: block;
+
+    }
+
+    .show li a {
+        display: block;
+        font-size:15px ;
+
+    }
+
+    #hamburger::before {
+        font-size: 2rem;
+        content: "☰";
+    }
+
+    #hamburger.show::before {
+        font-size: 2rem;
+        content: "X";
+    }
+
+    .card h3 {
+        text-align: center;
+    }
+
+    .card:nth-child(3) {
+        grid-column: 1 / span 2;
+    }
 }
