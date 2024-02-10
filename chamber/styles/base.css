@@ -59,6 +59,10 @@ header {
     grid-column: 1 / span 2;
 }
 
+.card:not(.first-child) {
+    border-radius: 15px;
+}
+
 .card a {
     text-decoration: none;
 }
@@ -79,6 +83,7 @@ header {
 
 .card {
     border: solid #000000;
+
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -137,14 +142,14 @@ footer {
 }
 
 #mode {
-	position: fixed;
-	bottom: 1rem;
-	right: 1rem;
-	font-size: 1.5rem;
-	cursor: pointer;
-    background-color: #020035; 
-	border-radius: 50%; 
-	padding: 1rem; 
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #020035;
+    border-radius: 50%;
+    padding: 1rem;
 }
 
 @media only screen and (max-width: 469px) {
