@@ -3,14 +3,26 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+:root {
+    --primary-color: #002244;
+    /* Dark Blue */
+    --secondary-color: #faebd7;
+    /* Antique White */
+    --link-hover-color: #4B9CD3;
+
+
     font-family: 'Montserrat';
     color: white;
+
 }
 
 header,
 footer,
+.navigation,
 .card {
-    background-color: #002244;
+    background-color: var(--primary-color);
 }
 
 .eye-catcher {
@@ -26,14 +38,25 @@ header {
     grid-template-rows: 50% 50%;
 }
 
+.navigation {
+    margin-left: 10px;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
 .cardsdiv {
     display: grid;
     grid-template-columns: 3fr 3fr;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card:first-child {
     grid-column: 1 / span 2;
-    text-align: center;
 }
 
 .card a {
@@ -41,7 +64,7 @@ header {
 }
 
 .card a:hover {
-    background-color: #4B9CD3;
+    background-color: var(--link-hover-color);
     font-size: 30px;
 }
 
@@ -49,10 +72,13 @@ header {
     grid-column: 1 / span 2;
 }
 
+.card:nth-child(4) img {
+    height: auto;
+    width: 98%;
+}
+
 .card {
     border: solid #000000;
-
-    color: #FFFFFF;
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -70,6 +96,16 @@ header {
     height: auto;
 }
 
+.social {
+    position: static;
+}
+
+.social img {
+    height: 25px;
+    width: auto;
+    margin-left: 10px;
+}
+
 .headergrid h1 {
     font-size: 50px;
     text-align: center;
@@ -80,10 +116,6 @@ header img {
     margin: 10px;
     width: 100%;
     height: auto;
-}
-
-.headergrid nav {
-    grid-column: 3 / 6;
 }
 
 footer {
@@ -100,6 +132,21 @@ footer {
     background-color: #4B9CD3;
 }
 
+.navigation a:visited {
+    color: #ffffff;
+}
+
+#mode {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 2rem;
+	cursor: pointer;
+	z-index: 1000;
+    background-color: antiquewhite; 
+	border-radius: 50%; 
+	padding: 1rem; 
+}
 
 @media only screen and (max-width: 469px) {
 
