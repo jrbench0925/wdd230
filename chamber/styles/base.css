@@ -41,11 +41,8 @@ footer,
     height: auto;
 }
 
-header {
+header, footer {
     margin: 10px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 50% 50%;
 }
 
 .navigation {
@@ -93,7 +90,6 @@ header {
 
 .card {
     border: solid #000000;
-
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -111,16 +107,6 @@ header {
     height: auto;
 }
 
-.social {
-    position: static;
-}
-
-.social img {
-    height: 25px;
-    width: auto;
-    margin-left: 10px;
-}
-
 .headergrid h1 {
     font-size: 50px;
     text-align: center;
@@ -133,11 +119,15 @@ header img {
     height: auto;
 }
 
-footer {
-    margin: 10px;
-    text-align: center;
+.social {
+    position: static;
 }
 
+.social img {
+    height: 25px;
+    width: auto;
+    margin-left: 10px;
+}
 .navigation a {
 
     text-decoration: none;
@@ -228,11 +218,16 @@ input:checked+.slider:before {
     }
 
     .headergrid h1 {
-        text-align: start;
+        grid-column: 1/5;
+        text-align: center;
         font-size: 25px;
     }
 
     #hamburger {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        margin-top: auto;
+        position: relative;
         display: block;
         font-size: 2rem;
         font-weight: 600;
