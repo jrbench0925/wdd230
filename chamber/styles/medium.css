@@ -1,21 +1,21 @@
 @media only screen and (max-width: 767px) and (min-width: 470px) {
 
-    *{
-        margin-left:3px;
+    * {
+        margin-left: 3px;
     }
 
     #hamburger {
         display: none;
     }
 
-    
     .headergrid {
         grid-template-rows: 15% 65% 30%;
         grid-template-columns: 5% 20% 35% 20% 20%;
         width: 100%;
         height: auto;
     }
-    .headergrid h1{
+
+    .headergrid h1 {
         font-size: 30px;
     }
 
@@ -35,7 +35,7 @@
         margin: 5px;
     }
 
-    .navigation a{
+    .navigation a {
         font-size: 20px;
     }
 
@@ -43,16 +43,21 @@
         margin-left: 10px;
     }
 
-    .card h3{
+    .card h3 {
         font-size: 20px;
     }
 
-    .card p{
+    .card p {
         font-size: 15px;
     }
 
-    footer p, span{
+    footer p,
+    span {
         font-size: 15px;
+    }
+
+    header img {
+        display: none;
     }
 
 }
