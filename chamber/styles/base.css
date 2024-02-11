@@ -16,12 +16,14 @@
 .light-mode {
     --primary-color: #002244;
     --secondary-color: #faebd7;
+    --link-hover-color: #4B9CD3;
 }
 
 .dark-mode {
     --primary-color: #161616;
     --secondary-color: #000000;
     --main-bg-color: #000000;
+    --link-hover-color: #808080;
 }
 
 body {
@@ -144,7 +146,7 @@ footer {
 }
 
 .navigation a:hover {
-    background-color: #4B9CD3;
+    background-color: var(--link-hover-color);
 }
 
 .navigation a:visited {
@@ -173,7 +175,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #2196F3;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -185,13 +187,13 @@ footer {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--primary-color);
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked+.slider {
-    background-color: #2196F3;
+    background-color: #808080;
 }
 
 input:focus+.slider {
