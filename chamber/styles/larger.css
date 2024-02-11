@@ -65,15 +65,4 @@
         height: 30px;
         width: auto;
     }
-
-    #mode {
-        position: fixed;
-        bottom: 1rem;
-        right: 1rem;
-        font-size: 1.5rem;
-        cursor: pointer;
-        background-color: #020035;
-        border-radius: 50%;
-        padding: 1rem;
-    }
 }
