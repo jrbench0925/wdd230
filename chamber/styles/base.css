@@ -6,8 +6,6 @@
 }
 
 :root {
-        --primary-color: #002244;
-        --secondary-color: #faebd7;
         --link-hover-color: #4B9CD3;
         font-family: 'Montserrat';
         color: #ffffff;
@@ -21,8 +19,12 @@
 .dark-mode {
     --primary-color: #161616;
     --secondary-color: #000000;
+    --main-bg-color: #000000;
 }
 
+body{
+    background-color: var(--main-bg-color);
+}
 
 header,
 footer,
@@ -200,6 +202,13 @@ footer {
     transform: translateX(26px);
   }
 
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 @media only screen and (max-width: 469px) {
 
     header {
