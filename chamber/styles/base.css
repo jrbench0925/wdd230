@@ -41,7 +41,8 @@ footer,
     height: auto;
 }
 
-header, footer {
+header,
+footer {
     margin: 10px;
 }
 
@@ -128,6 +129,7 @@ header img {
     width: auto;
     margin-left: 10px;
 }
+
 .navigation a {
 
     text-decoration: none;
@@ -137,7 +139,8 @@ header img {
     background-color: var(--link-hover-color);
 }
 
-.navigation a:visited {
+.navigation a:visited,
+.card a:visited {
     color: #ffffff;
 }
 
