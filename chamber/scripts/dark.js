@@ -30,6 +30,7 @@ modeButton.addEventListener("click", () => {
         footer.style.background = "";
         nav.style.background = "";
         firsth3.style.background = "";
+        cardP1.style.background = "";
         modeButton.textContent = "🕶️";
     }
 });
