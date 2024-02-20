@@ -122,9 +122,9 @@ header img {
 
 .temple {
     display: flex;
-flex-direction: column;
-align-items: center;
-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
 }
 
 .social {
