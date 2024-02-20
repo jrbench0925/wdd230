@@ -30,6 +30,7 @@
         <div id="hamburger"></div>
     </header>
     <main>
+
         <nav>
             <ul class="navigation">
                 <li><a href="#">Home</a></li>
@@ -39,8 +40,14 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-
-        <img src="images/blackfoot.webp" alt="City of Blackfoot" class="eye-catcher">
+        <div class="eye-catcher">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/wdd230-org-small.webp">
+                <source media="(max-width: 680px)" srcset="images/wdd230-org-medium.webp">
+                <source media="(max-width: 960px)" srcset="images/wdd230-org-large.webp">
+                <img src="images/wdd230-org-large.webp" alt="A very important meeting of three random people">
+            </picture>
+        </div>
         <div class="cardsdiv">
             <section class="card">
                 <h3><a href="#">Join the Chamber</a></h3>
@@ -59,7 +66,10 @@
             </section>
             <section class="card">
                 <h3>Weather</h3>
-                <p><img src="images/groundhog.jpg" alt="groundhog"></p>
+                <p>Temperature: <span id="temperature">15°F</span><br>
+                    Wind Speed: <span id="windSpeed"> 10 mph</span><br>
+                    Wind Chill: <span id="windChill"></span></p>
+                <!--<p><img src="images/groundhog.jpg" alt="groundhog"></p>-->
             </section>
         </div>
         <label class="switch">
@@ -83,6 +93,7 @@
     </footer>
     <script src="../scripts/getdates.js"></script>
     <script src="scripts/dark.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

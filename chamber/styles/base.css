@@ -35,9 +35,12 @@ footer,
     background-color: var(--primary-color);
 }
 
-.eye-catcher {
-    width: 99.5%;
-    margin-left: 10px;
+.eye-catcher{
+    width: 100%;
+}
+
+.eye-catcher img {
+    width: 100%;
     height: auto;
 }
 
@@ -283,9 +286,4 @@ input:checked+.slider:before {
         grid-column: 1 / span 2;
     }
 
-    .eye-catcher {
-        margin: 10px;
-        width: 96%;
-        height: auto;
-    }
 }
