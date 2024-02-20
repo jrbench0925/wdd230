@@ -120,13 +120,6 @@ header img {
     height: auto;
 }
 
-.temple {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 100px;
-}
-
 .social {
     position: static;
 }
