@@ -12,3 +12,16 @@ hamburgerButton.addEventListener('click', () => {
     mainNav.classList.toggle('show');
     hamburgerButton.classList.toggle('show');
 });
+
+const visitsDisplay = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = "0";
+}
+
+numVisits++;
+ localStorage.setItem("numVisits-ls", numVisits);
