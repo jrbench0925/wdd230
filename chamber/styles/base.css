@@ -4,6 +4,43 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.sidebar {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "card1 photo1"
+        "card2 photo2"
+        "card3 photo3"
+        "card4 photo4"
+        "card5 photo5"
+        "card6 photo6";
+    color: black;
+    grid-gap: 10px;
+}
+
+.discoverCard1 {
+    background-color: #002244;
+    grid-area: card1;
+}
+
+.discoverCard2 {
+    background-color: #002244;
+    grid-area: card2;
+}
+
+.discoverCard3 {
+    background-color: #002244;
+grid-area: card3;
+}
+
+.discoverImg1 img {
+    grid-area: photo1;
+    width: auto;
+max-height: 500px;
+}
+
 :root {
     --link-hover-color: #4B9CD3;
     color: #ffffff;
@@ -35,7 +72,7 @@ footer,
     background-color: var(--primary-color);
 }
 
-.eye-catcher{
+.eye-catcher {
     width: 100%;
 }
 
