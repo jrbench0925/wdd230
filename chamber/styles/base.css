@@ -19,47 +19,42 @@
     grid-gap: 10px;
 }
 
-
-.image1 {
-    grid-area: ph1;
+.image1, .image2, .image3, .image4, .image5, .image6{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 1s ease;
+}
+
+.image1:hover, .image2:hover, .image3:hover, .image4:hover, .image5:hover, .image6:hover {
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.image1 {
+    grid-area: ph1;
+
 }
 
 .image2 {
     grid-area: ph2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .image3 {
     grid-area: ph3;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .image4 {
     grid-area: ph4;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .image5 {
     grid-area: ph5;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .image6 {
     grid-area: ph6;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
 }
 
 .card1 {
@@ -114,6 +109,10 @@ footer,
 .navigation,
 .card {
     background-color: var(--primary-color);
+}
+
+figcaption {
+    color: white;
 }
 
 .eye-catcher {
