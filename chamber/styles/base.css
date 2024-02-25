@@ -2,43 +2,87 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: #002244;
 }
 
 .sidebar {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 20% 70%;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 20% 40% 40%;
+    grid-auto-rows: auto auto;
     grid-template-areas:
-        "card1 photo1"
-        "card2 photo2"
-        "card3 photo3"
-        "card4 photo4"
-        "card5 photo5"
-        "card6 photo6";
+        "sb1 ph1 ph2"
+        "sb2 ph3 ph4"
+        "sb3 ph5 ph6";
     color: black;
+    align-items: center;
     grid-gap: 10px;
 }
 
-.discoverCard1 {
-    background-color: #002244;
-    grid-area: card1;
+
+.image1 {
+    grid-area: ph1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.discoverCard2 {
-    background-color: #002244;
-    grid-area: card2;
+.image2 {
+    grid-area: ph2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.discoverCard3 {
-    background-color: #002244;
-grid-area: card3;
+.image3 {
+    grid-area: ph3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.discoverImg1 img {
-    grid-area: photo1;
-    width: auto;
-max-height: 500px;
+.image4 {
+    grid-area: ph4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image5 {
+    grid-area: ph5;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image6 {
+    grid-area: ph6;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card1 {
+    background-color: #002244;
+    color: white;
+    grid-area: sb1;
+    padding: 20px;
+
+}
+
+.card2 {
+    background-color: #002244;
+    color: white;
+    grid-area: sb2;
+    padding: 20px;
+
+}
+
+.card3 {
+    background-color: #002244;
+    color: white;
+    grid-area: sb3;
+    padding: 20px;
 }
 
 :root {
