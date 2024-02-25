@@ -367,4 +367,24 @@ input:checked+.slider:before {
         grid-column: 1 / span 2;
     }
 
+    .sidebar {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: repeat(12, auto);
+        grid-template-areas:
+            "sb1"
+            "sb2"
+            "sb3"
+            "ph1"
+            "ph2"
+            "ph3"
+            "ph4"
+            "ph5"
+            "ph6";
+        color: black;
+        align-items: center;
+        grid-gap: 10px;
+    }
+
 }
