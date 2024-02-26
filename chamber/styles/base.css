@@ -9,7 +9,7 @@
     margin-top: 10px;
     display: grid;
     grid-template-columns: 20% 40% 40%;
-    grid-auto-rows: auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
         "sb1 ph1 ph2"
         "sb2 ph3 ph4"
@@ -385,7 +385,7 @@ input:checked+.slider:before {
     .sidebar {
 
         grid-template-columns: 100%;
-        grid-auto-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(9, 1fr);
         grid-template-areas:
             "sb1"
             "sb2"
