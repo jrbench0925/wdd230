@@ -66,7 +66,7 @@
 }
 
 .sidebar p, .sidebar h3, .sidebar p, .sidebar span, .sidebar figure, .sidebar figcaption, .navigation li, footer p, footer span {
-    background-color: #002244;
+    background-color: var(--primary-color);
 }
 
 #visitCount, #hamburger, .headergrid h1 {
@@ -162,8 +162,13 @@ footer {
     border-radius: 15px;
 }
 
-.card a {
+.card a, .card h3, .card p, .card span {
     text-decoration: none;
+    background-color: var(--primary-color);
+}
+
+.social {
+    background-color: var(--primary-color);
 }
 
 .card a:hover {
