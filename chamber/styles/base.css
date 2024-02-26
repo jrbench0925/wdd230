@@ -385,7 +385,7 @@ input:checked+.slider:before {
     .sidebar {
 
         grid-template-columns: 100%;
-        grid-auto-rows: repeat(12, auto);
+        grid-auto-rows: repeat(10, 1fr);
         grid-template-areas:
             "sb1"
             "sb2"
