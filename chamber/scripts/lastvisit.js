@@ -7,7 +7,6 @@ function displayMessage() {
         document.getElementById("visitCount").textContent = "Welcome! Let us know if you have any questions.";
     }
     else {
-
         const differenceInDays = Math.floor(Math.abs(today - new Date(visitDate)) / oneDay);
 
         if (differenceInDays < 1){
