@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #002244;
+    background-color: antiquewhite;
 }
 
 .sidebar {
@@ -17,6 +17,7 @@
     color: black;
     align-items: center;
     grid-gap: 10px;
+    background-color: #002244;
 }
 
 .image1, .image2, .image3, .image4, .image5, .image6{
@@ -33,7 +34,6 @@
 
 .image1 {
     grid-area: ph1;
-
 }
 
 .image2 {
@@ -57,27 +57,35 @@
 
 }
 
-#card1 {
-    background-color: #002244;
+.card1 {
     color: white;
     grid-area: sb1;
     padding: 20px;
+    background-color: #002244;
+    border: 10px solid 
+}
 
+.sidebar p, .sidebar h3, .sidebar p, .sidebar span, .sidebar figure, .sidebar figcaption, .navigation li, footer p, footer span {
+    background-color: #002244;
+}
+
+#visitCount{
+    background-color: #002244;
 }
 
 .card2 {
-    background-color: #002244;
     color: white;
     grid-area: sb2;
     padding: 20px;
-
-}
-
-.card3 {
     background-color: #002244;
+    border: 10px solid 
+}
+.card3 {
     color: white;
     grid-area: sb3;
     padding: 20px;
+    background-color: #002244;
+    border: 10px solid 
 }
 
 :root {
