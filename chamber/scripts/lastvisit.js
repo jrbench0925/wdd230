@@ -9,11 +9,11 @@ function displayMessage() {
     else {
         const differenceInDays = Math.floor(Math.abs(today - new Date(visitDate)) / oneDay);
 
-        if (differenceInDays < 1){
+        if (differenceInDays < 1) {
             document.getElementById('visitCount').textContent = "Back so soon! Awesome";
         } else if (differenceInDays === 1) {
             document.getElementById('visitCount').textContent = "You last visited 1 day ago.";
-        } else{
+        } else {
             document.getElementById('visitCount').textContent = `You last visited ${differenceInDays} days ago.`;
         }
     }
