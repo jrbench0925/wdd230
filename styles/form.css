@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+    background-color: #faebd7;
+    --primary-color: #002244;
+    --secondary-color: #faebd7;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+body{
+    max-width: 700px;
+    margin: auto;
+}
+
+header{
+    margin-top: 1px;
+}
+
+.headerel{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    border: solid black 3px;
+}
+
+#headshot{
+    grid-column: 2/3;
+}
+
+.headerel h1{
+    grid-column: 3 /span 2;
+}
+
+.headerel h2 {
+    grid-column: 1 / span 5;
+    grid-row: 2/ 3;
+    text-align: center;
+}
+
+.navigation{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #3498db;
+    border: black solid 3px;
+    padding: 10px;
+    margin: 1px;
+    list-style: none;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.navigation li a:hover {
+    color: navy;
+    font-size: 1.5em;
+}
+
+body{
+    background-color: #3498db;
+}
+
+.headerel img{
+    grid-column: 2 /3;
+    max-width: 120px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.card {
+    width: 75%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+label {
+    display: block;
+    margin: 5px;
+    text-align: left;
+}
+
+footer, main{
+    text-align: center;
+    border: solid black 3px;
+}
+
+footer {
+    margin-top: 1px;
+}
+.footerimg {
+    height: 25px;
+    width: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    width: 100%;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+output {
+    display: block;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#rating {
+	width: 210px;
+	margin-bottom: 0;
+}
+
+#ratingvalue {
+	font-size: 1rem;
+	color: white;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 40px;
+	width: 220px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
