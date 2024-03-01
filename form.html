@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jeff Bench's Form page">
+    <meta name="description" content="Jeff Bench's Form Build">
     <meta name="author" content="Jeff Bench">
-    <title>Jeff Bench - WDD 230 - Web Frontend Development Form Page</title>
+    <title>Jeff Bench - WDD 230 - Web Frontend Development Form Build</title>
 
-    <meta property="og:title" content="WDD230 Web Frontend Development Form Page">
+    <meta property="og:title" content="WDD230 Web Frontend Development Form Build">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jrbench0925.github.io/wdd230/form.html">
 
@@ -21,52 +21,52 @@
         <img src="images/profile.webp" alt="Headshot" id="headshot">
         <h1>Jeff Bench</h1>
         <h2>WDD 230: Web Frontend Development</h2>
-        </header>
-        <nav>
-            <div id="hamburger"></div>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-                <li><a href="chamber/">Chamber</a></li>
-                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/17?lang=eng#p20"
-                        target="_blank">Scripture</a></li>
-            </ul>
-        </nav>
+    </header>
+    <nav>
+        <div id="hamburger"></div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/17?lang=eng#p20"
+                    target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
 
     <main>
         <div class="card">
             <form action="record.html" method="get">
-                    <label for="username">Username* <input type="text" id="username" name="username" required></label>
-                    
-                    <label for="pass">Password*<input type="password" id="pass" name="pass" pattern="[A-Za-z0-9_.]{8,}"
+                <legend>User Information</legend>
+                <label for="username">Username* <input type="text" id="username" name="username" required></label>
+
+                <label for="pass">Password*<input type="password" id="pass" name="pass" pattern="[A-Za-z0-9_.]{8,}"
                         placeholder="Min 8 characters" required></label>
-                    
-                    <label for="confirmPass"> Confirm Password*<input type="password" id="confirmPass" name="confirmPass" pattern="[A-Za-z0-9_.]{8,}"
-                            placeholder="Confirm Password" required></label>
-                    <div id="message"></div>
 
-                    <label for="email">Email Address*<input type="email" name="email" id="email" placeholder="Your BYUI.edu email address"
-                        pattern="[a-zA-Z0-9_.]+@byui.edu" required></label>
+                <label for="confirmPass"> Confirm Password*<input type="password" id="confirmPass" name="confirmPass"
+                        pattern="[A-Za-z0-9_.]{8,}" placeholder="Confirm Password" required></label>
+                <div id="message"></div>
 
-                    <label for="rating">Please Rate our Page</label>
-                    <div id="ratingvalue">0</div>
-                    <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1"
-                        list="ratingvalues" />
-                    <datalist id="rangevalues">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </datalist>
-                    <input type="submit" value="Complete Form">
+                <label for="email">Email Address*<input type="email" name="email" id="email"
+                        placeholder="Your BYUI.edu email address" pattern="[a-zA-Z0-9_.]+@byui.edu" required></label>
+
+                <label for="rating">Please Rate our Page</label>
+                <div id="ratingvalue">0</div>
+                <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="ratingvalues" />
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <input type="submit" value="Complete Form">
             </form>
         </div>
     </main>
