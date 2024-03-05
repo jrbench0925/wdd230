@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackfoot Chamber of Commerce Join Page</title>
+
+    <meta name="description" content="Jeff Bench's WDD 230 Web Frontend Development Chamber Site">
+    <meta name="author" content="Jeff Bench">
+    <meta property="og:title" content="Blackfoot Chamber of Commerce Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jrbench0925.github.io/wdd230/chamber/join.html">
+    <meta property="og:image" content="https://www.cityofblackfoot.org/ImageRepository/Document?documentID=1688">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+
+<body>
+    <header class="headergrid">
+        <img src="images/water-tower.webp" alt="Chamber Logo">
+        <h1>Blackfoot Chamber of Commerce</h1>
+        <div id="hamburger"></div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="join-h1">Chamber Membership Application</h1>
+        <div class="join-container">
+            <form method="get" action="thankyou.html">
+                <fieldset class="formInfo">
+                    <legend class="formHeader">Applicant Information</legend>
+                    <label for="fname" class="details">First Name* <input type="text" id="fname" name="fname"
+                            required></label>
+                    <label for="lname" class="details">Last Name* <input type="text" id="lname" name="lname"
+                            required></label>
+                    <label for="position" class="details">Job Title/Position* <input type="text" id="position"
+                            name="position" pattern="[a-zA-Z\s\-]{7,}" required placeholder="Min 7 characters"></label>
+                    <label for="email" class="details">Email* <input type="email" id="email" name="email"
+                            placeholder="johndoe@youremail.com" title="Please enter a valid email address."
+                            required></label>
+                    <label for="phone" class="details">Phone Number* <input type="tel" id="phone" name="phone"
+                            required></label>
+                    <label for="business" class="details">Business/Organization Name* <input type="text" id="business"
+                            name="business" required></label>
+                </fieldset>
+                <fieldset class="memberLevel">
+                    <legend class="formHeader">Membership Level</legend>
+                    <label><input type="radio" name="membership" value="Non-Profit">Non-Profit</label>
+                    <label><input type="radio" name="membership" value="Bronze">Bronze</label>
+                    <label><input type="radio" name="membership" value="Silver">Silver</label>
+                    <label><input type="radio" name="membership" value="Gold">Gold</label>
+                </fieldset>
+
+                <fieldset class="businessInfo">
+                    <legend class="formHeader">Business Description</legend>
+                    <textarea id="description" name="description"
+                        placeholder="Enter a description of your business."></textarea>
+                </fieldset>
+                <fieldset class="submitBtn">
+                    <input type="hidden" id="submissionTime" name="submissionTime">
+                    <input type="submit" class="join" value="Join The Chamber">
+                </fieldset>
+            </form>
+        </div>
+        <fieldset class="join-container">
+            <section class="nonProfit">
+                <h3>Non-Profit</h3>
+                <p>Complimentary</p>
+                <ul class="benefits">
+                    <li>Networking Opportunities</li>
+                    <li>Visibility and Recognition</li>
+                    <li>Capacity Building Resources</li>
+                    <li>Advocacy and Representation</li>
+                    <li>Monthly Luncheon</li>
+                </ul>
+            </section>
+            <section class="bronze">
+                <h3>Bronze</h3>
+                <p>Cost goes here</p>
+                <p>Includes all features in Non-Profit as well as:</p>
+                <ul class="benefits">
+                    <li>Community Engagement Activities</li>
+                    <li>Membership Discounts</li>
+                    <li>Collaborative Partnerships</li>
+                    <li>Online resources</li>
+                </ul>
+            </section>
+
+            <section class="silver">
+                <h3>Silver</h3>
+                <p>Cost goes here</p>
+                <p>Includes all features in Bronze as well as:</p>
+                <ul class="benefits">
+                    <li>Active Community Engagement</li>
+                    <li>Strategic Collaborative Partnerships</li>
+                    <li>Robust Advocacy and Representative</li>
+                    <li>Expanded Capacity Building Resources</li>
+                </ul>
+            </section>
+            <section class="gold">
+                <h3>Gold</h3>
+                <p>Cost goes here</p>
+                <p>Includes all features in Silver as well as:</p>
+                <ul class="benefits">
+                    <li>Premier Networking Opportunities</li>
+                    <li>Elevated Visability</li>
+                    <li>Empowered Advocacy and Representative</li>
+                    <li>Comprehensive Capacity Building Resources</li>
+                    <li>Exclusive Membership Discounts and Benefits</li>
+                </ul>
+            </section>
+            </div>
+
+            </div>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="copyright"></span> Jeff Bench | Idaho, USA
+            <img class="logo" src="../images/idaho_flag.webp" alt="Idaho Flag">
+        </p>
+        <p>BYU-Idaho | WDD 230 | Chamber of Commerce Join Page</p>
+        <p>Last Modified <span id="lastModified"></span></p>
+        <div class="social">
+            <a href="https://www.facebook.com/BlackfootChamber/?ref=aymt_homepage_panel&eid=ARCLKCAvf8dlATXrAScofAAGO3c82oWlGhfMFyO58H-vH2ch9PIFXti22S_jHeX_XWHUFI-zyUOc4NnL"
+                target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="#"><img src="images/x.webp" alt="X"></a>
+            <a href="https://www.instagram.com/blackfootchamber/" target="_blank"><img src="images/instagram.webp"
+                    alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
