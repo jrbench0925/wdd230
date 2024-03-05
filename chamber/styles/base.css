@@ -24,7 +24,7 @@ body {
 .join-container {
     float: left;
     width: 50%;
-    max-width: 600px;
+    max-width: 760px;
     background-color: var(--primary-color);
     border: none;
 }
@@ -76,7 +76,7 @@ h3 {
 .formHeader {
     font-size: 1.5em;
     background-color: var(--third-color);
-    border-radius: solid white 1px;
+
 }
 
 .memberLevel {
