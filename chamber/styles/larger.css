@@ -1,23 +1,6 @@
 @media only screen and (min-width: 768px) {
 
-
     /* join css */
-    :root {
-        --link-hover-color: #4B9CD3;
-        color: #ffffff;
-        --primary-color: #002244;
-        --secondary-color: #faebd7;
-        --third-color: #0f2a72;
-        --border-color: #a9a9a9;
-
-    }
-
-    .light-mode {
-        --primary-color: #002244;
-        --secondary-color: #faebd7;
-        --link-hover-color: #4B9CD3;
-    }
-
     body {
         background-color: var(--primary-color);
     }
