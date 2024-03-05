@@ -110,6 +110,11 @@
         font-size: 1.5em;
     }
 
+    footer {
+
+        clear: both;
+    }
+
     /*end join */
     #hamburger {
         display: none;
