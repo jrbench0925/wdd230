@@ -1,9 +1,7 @@
 @media only screen and (min-width: 768px) {
 
-    /* join css 
-    body {
-        background-color: var(--primary-color);
-    }
+    /* join css */
+
 
     .join-container {
         float: left;
@@ -13,6 +11,7 @@
         border: none;
     }
 
+    /*
     .nonProfit,
     .bronze,
     .silver,
