@@ -1,8 +1,5 @@
 @media only screen and (min-width: 768px) {
 
-    /* join css */
-
-
     .join-container {
         float: left;
         width: 40%;
@@ -11,93 +8,6 @@
         border: none;
     }
 
-    /*
-    .nonProfit,
-    .bronze,
-    .silver,
-    .gold {
-        border-radius: 10px;
-        border: solid var(--border-color);
-        margin: 10px;
-        background-color: var(--third-color);
-        padding: 10px;
-    }
-
-    h3 {
-        font-size: 2em;
-        text-decoration: underline;
-        text-align: center;
-    }
-
-    .formInfo,
-    .memberLevel,
-    .businessInfo,
-    .submitBtn {
-        background-color: var(--third-color);
-        border-radius: 10px;
-        margin: 10px;
-        padding: 10px;
-        border: solid var(--border-color);
-        width: 90%;
-    }
-
-    .join-container legend {
-        border: solid;
-        border-radius: 10px;
-        padding: 5px;
-    }
-
-    .join-h1 {
-        text-align: center;
-    }
-
-    .formInfo {
-        display: inline-grid;
-    }
-
-    .formHeader {
-        font-size: 1.5em;
-        background-color: var(--third-color);
-        border-radius: solid white 1px;
-    }
-
-    .memberLevel {
-        display: inline-grid;
-        line-height: 1.5;
-        padding: 15px;
-    }
-
-    .businessInfo textarea {
-        height: 100px;
-        width: 90%;
-        padding: 5px;
-    }
-
-    .formInfo label,
-    .formInfo input {
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-    }
-
-    .submitBtn {
-        text-align: center;
-        border: none;
-        background-color: var(--primary-color);
-    }
-
-    .join {
-        width: 50%;
-        height: 40px;
-        font-size: 1.5em;
-    }
-
-    footer {
-
-        clear: both;
-    }
-
-    end join */
     #hamburger {
         display: none;
     }
