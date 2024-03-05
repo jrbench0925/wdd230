@@ -1,6 +1,6 @@
 @media only screen and (min-width: 768px) {
 
-    /* join css */
+    /* join css 
     body {
         background-color: var(--primary-color);
     }
@@ -98,7 +98,7 @@
         clear: both;
     }
 
-    /*end join */
+    end join */
     #hamburger {
         display: none;
     }
