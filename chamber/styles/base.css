@@ -199,6 +199,10 @@ footer span {
     background-color: var(--primary-color);
 }
 
+.navigation a {
+    color: white;
+}
+
 #visitCount,
 #hamburger,
 .headergrid h1 {
