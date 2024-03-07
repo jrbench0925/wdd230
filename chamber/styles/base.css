@@ -199,7 +199,7 @@ footer span {
     background-color: var(--primary-color);
 }
 
-.navigation a {
+.navigation a .navigation a:visited {
     color: white;
 }
 
