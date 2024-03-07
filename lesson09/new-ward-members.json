@@ -1,0 +1,35 @@
+{
+    "wardInformation": {
+        "familyName": "Doe",
+        "moveInDate": "2024-03-06",
+        "amountInFamily": 4,
+        "bishopbricVisit": true,
+        "familyMembers": [
+            {
+                "name": "John Doe",
+                "gender": "Male",
+                "birthdate": "1900-04-01"
+            },
+            {
+                "name": "Jane Doe",
+                "gender": "Female",
+                "birthdate": "1901-04-01"
+            },
+            {
+                "name": "Boy Doe",
+                "gender": "Male",
+                "birthdate": "1920-04-02"
+            },
+            {
+                "name": "Boy Doe",
+                "gender": "Male",
+                "birthdate": "1920-04-02"
+            },
+            {
+                "name": "Girl Doe",
+                "gender": "Female",
+                "birthdate": "1924-04-02"
+            }
+        ]
+    }
+}
