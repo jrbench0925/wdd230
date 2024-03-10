@@ -1,73 +1,126 @@
 {
-    "lessons": [
-      {
-        "lesson": "01",
-        "links": [
-          {"url": "https://jbench0925.github.io/wdd230/lesson01/holygrail.html", "title": "Holy Grail"},
-          {"url": "https://jbench0925.github.io/wdd230/lesson02/media-query.html", "title": "Media Queries"}
- 
-        ]
-      },
-      {
-        "lesson": "02",
-        "links": [
-          {"url": "https://jbench0925.github.io/wdd230/lesson02/design.html", "title": "Design" },
-          {"url": "https://jbench0925.github.io/wdd230/lesson02/design-principles.html", "title": "Design Prinicples" }
-        ]
-      },
-      {
-        "lesson": "03",
-        "links": [
-          {"url": "images/combinators_screenie.png", "title": "Combinator Css" },
-          {"url": "", "title": "Psuedo-Elements" },
-          {"url": "", "title": "Responsive Menu" },
-          {"url": "https://jbench0925.github.io/wdd230/lesson03/chamber-site-plan.html", "title": "Chamber Site Plan" }
-        ]
-      },
-      {
-        "lesson": "04",
-        "links": [
-          {"url": "", "title": "Psuedo-Classes" }
-        ]
-      },
-      {
-        "lesson": "05",
-        "links": [
-          {"url": "https://jbench0925.github.io/wdd230/lesson05/bom.html", "title": "Book of Mormon Favorite Chapter p.1" }
-        ]
-      },
-      {
-        "lesson": "06",
-        "links": [
-          {"url": "images/landscape.webp", "title": "Webp"},
-          {"url": "https://jbench0925.github.io/wdd230/lesson06/responsive-images.html", "title": "Responsive-Images" }
-        ]
-      },
-      {
-        "lesson": "07",
-        "links": [
-          {"url": "https://jbench0925.github.io/wdd230//lesson07/lazyloard.html", "title": "Lazy Load" },
-          {"url": "https://jbench0925.github.io/wdd230/lesson08/bom.html", "title": "Local Storage" }
-        ]
-      },
-      {
-        "lesson": "08",
-        "links": [
-          {"url": "https://jbench0925.github.io/wdd230/lesson09/tablebuild.html", "title": "Table Build" },
-          {"url": "https://jbench0925.github.io/wdd230/form.html", "title": "Form Build" }
-        ]
-      },
-      {
+  "lessons": [
+    {
+      "lesson": "01",
+      "links": [
+        {
+          "url": "https://jrbench0925.github.io/wdd230/lesson01/holygrail.html",
+          "title": "Holy Grail"
+        },
+        {
+          "url": "https://jbench0925.github.io/wdd230/lesson02/media-query.html",
+          "title": "Media Queries"
+        }
+      ]
+    },
+    {
+      "lesson": "02",
+      "links": [
+        {
+          "url": "",
+          "title": "Design"
+        },
+        {
+          "url": "https://jbench0925.github.io/wdd230/lesson02/design-principles.html",
+          "title": "Design Prinicples"
+        }
+      ]
+    },
+    {
+      "lesson": "03",
+      "links": [
+        {
+          "url": "images/combinators_screenie.png",
+          "title": "Combinator Css"
+        },
+        {
+          "url": "",
+          "title": "Psuedo-Elements"
+        },
+        {
+          "url": "",
+          "title": "Responsive Menu"
+        },
+        {
+          "url": "https://jbench0925.github.io/wdd230/lesson03/chamber-site-plan.html",
+          "title": "Chamber Site Plan"
+        }
+      ]
+    },
+    {
+      "lesson": "04",
+      "links": [
+        {
+          "url": "",
+          "title": "Psuedo-Classes"
+        }
+      ]
+    },
+    {
+      "lesson": "05",
+      "links": [
+        {
+          "url": "https://jbench0925.github.io/wdd230/lesson05/bom.html",
+          "title": "Favorite Book of Mormon Chapter"
+        }
+      ]
+    },
+    {
+      "lesson": "06",
+      "links": [
+        {
+          "url": "images/landscape.webp",
+          "title": "Webp"
+        },
+        {
+          "url": "https://jbench0925.github.io/wdd230/lesson06/responsive-images.html",
+          "title": "Responsive-Images"
+        }
+      ]
+    },
+    {
+      "lesson": "07",
+      "links": [
+        {
+          "url": "https://jbench0925.github.io/wdd230//lesson07/lazyloard.html",
+          "title": "Lazy Load"
+        },
+        {
+          "url": "https://jbench0925.github.io/wdd230/lesson08/bom.html",
+          "title": "Local Storage"
+        }
+      ]
+    },
+    {
+      "lesson": "08",
+      "links": [
+        {
+          "url": "https://jbench0925.github.io/wdd230/lesson09/tablebuild.html",
+          "title": "Table Build"
+        },
+        {
+          "url": "https://jbench0925.github.io/wdd230/form.html",
+          "title": "Form Build"
+        }
+      ]
+    },
+    {
       "lesson": "09",
-        "links": [
-          {"url": "https://jbench0925.github.io/wdd230/lesson09/prophets.html", "title": "JSON Prophets" }
-        ]
-      },
-      {
-        "lesson": "10",
-        "links": [
-          {"url": "https://byui-cse.github.io/wdd230-course/lesson10/", "title": "Weather API" }
-        ]
-      }
-    ]
-  }
+      "links": [
+        {
+          "url": "https://jrbench0925.github.io/wdd230/lesson09/prophets.html",
+          "title": "JSON Prophets"
+        }
+      ]
+    },
+    {
+      "lesson": "10",
+      "links": [
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson10/",
+          "title": "Weather API"
+        }
+      ]
+    }
+  ]
+}
