@@ -8,7 +8,7 @@
           "title": "Holy Grail"
         },
         {
-          "url": "https://jbench0925.github.io/wdd230/lesson02/media-query.html",
+          "url": "https://jrbench0925.github.io/wdd230/lesson02/media-query.html",
           "title": "Media Queries"
         }
       ]
@@ -21,7 +21,7 @@
           "title": "Design"
         },
         {
-          "url": "https://jbench0925.github.io/wdd230/lesson02/design-principles.html",
+          "url": "https://jrbench0925.github.io/wdd230/lesson02/design-principles.html",
           "title": "Design Prinicples"
         }
       ]
@@ -30,7 +30,7 @@
       "lesson": "03",
       "links": [
         {
-          "url": "images/combinators_screenie.png",
+          "url": "images/combinators.png",
           "title": "Combinator Css"
         },
         {
@@ -42,7 +42,7 @@
           "title": "Responsive Menu"
         },
         {
-          "url": "https://jbench0925.github.io/wdd230/lesson03/chamber-site-plan.html",
+          "url": "https://jrbench0925.github.io/wdd230/lesson03/chamber-site-plan.html",
           "title": "Chamber Site Plan"
         }
       ]
@@ -60,7 +60,7 @@
       "lesson": "05",
       "links": [
         {
-          "url": "https://jbench0925.github.io/wdd230/lesson05/bom.html",
+          "url": "https://jrbench0925.github.io/wdd230/lesson05/bom.html",
           "title": "Favorite Book of Mormon Chapter"
         }
       ]
@@ -73,7 +73,7 @@
           "title": "Webp"
         },
         {
-          "url": "https://jbench0925.github.io/wdd230/lesson06/responsive-images.html",
+          "url": "https://jrbench0925.github.io/wdd230/lesson06/responsive-images.html",
           "title": "Responsive-Images"
         }
       ]
@@ -82,11 +82,11 @@
       "lesson": "07",
       "links": [
         {
-          "url": "https://jbench0925.github.io/wdd230//lesson07/lazyloard.html",
+          "url": "https://jrbench0925.github.io/wdd230//lesson07/lazyloard.html",
           "title": "Lazy Load"
         },
         {
-          "url": "https://jbench0925.github.io/wdd230/lesson08/bom.html",
+          "url": "https://jrbench0925.github.io/wdd230/lesson08/bom.html",
           "title": "Local Storage"
         }
       ]
@@ -95,11 +95,11 @@
       "lesson": "08",
       "links": [
         {
-          "url": "https://jbench0925.github.io/wdd230/lesson09/tablebuild.html",
+          "url": "https://jrbench0925.github.io/wdd230/lesson09/tablebuild.html",
           "title": "Table Build"
         },
         {
-          "url": "https://jbench0925.github.io/wdd230/form.html",
+          "url": "https://jrbench0925.github.io/wdd230/form.html",
           "title": "Form Build"
         }
       ]
