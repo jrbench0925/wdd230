@@ -5,7 +5,6 @@ const url = "https://jrbench0925.github.io/wdd230/chamber/data/members.json";
 const membersData = document.querySelector('#membersData');
 
 gridbutton.addEventListener("click", () => {
-    // example using arrow function
     display.classList.add("grid");
     display.classList.remove("list");
 });
@@ -16,6 +15,7 @@ function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
 }
+
 
 let mode = 'grid';
 
@@ -29,7 +29,7 @@ function displayLinks(links) {
     membersData.innerHTML = '';
     links.forEach(link => {
         const article = document.createElement('article');
-        article.classList.add('directorylist');
+        
 
         if (mode === 'grid') {
             article.innerHTML = `
