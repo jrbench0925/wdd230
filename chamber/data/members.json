@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Premier Technology",
+            "address": "1858 West Bridge St",
+            "phone": "208-785-2274",
+            "website": "https://www.ptius.net/",
+            "logo": "../images/pti.webp",
+            "membershipLevel": "Gold",
+            "other": ""
+        },
+        {
+            "name": "Blackhawk BBQ",
+            "address": "90 S Broadway St",
+            "phone": "208-994-6987",
+            "website": "https://blackhawkbbqpit.com/",
+            "logo": "../images/blackhawk.webp",
+            "membershipLevel": "Gold",
+            "other": ""
+        },
+        {
+            "name": "Tommy Vaughn's",
+            "address": "850 Jensen Grove Drive",
+            "phone": "208-785-6400",
+            "website": "https://tommyvaughns.com/",
+            "logo": "../images/tv.webp",
+            "membershipLevel": "Silver",
+            "other": ""
+        },
+        {
+            "name": "Rise Fitness",
+            "address": "1250 W Bridge",
+            "phone": "208-785-4338",
+            "website": "https://riseblackfoot.com/",
+            "logo": "../images/rise.webp",
+            "membershipLevel": "Silver",
+            "other": ""
+        },
+        {
+            "name": "Soda Mix",
+            "address": "830 Jensen Grove Dr",
+            "phone": "208-681-2749",
+            "website": "https://www.thesodamix.com/",
+            "logo": "../images/sodamix.webp",
+            "membershipLevel": "Bronze",
+            "other": ""
+        },
+        {
+            "name": "21st Century Auto Sales LLC",
+            "address": "1051 Parkway Dr",
+            "phone": "208-684-2121",
+            "website": "https://www.21stcenturyautosales.com/",
+            "logo": "../images/21stcentury.webp",
+            "membershipLevel": "Gold",
+            "other": ""
+        },
+        {
+            "name": "Candy Jar",
+            "address": "105 N.W. Main St",
+            "phone": "208-425-7400",
+            "website": "https://blackfootcandyjar.com/",
+            "logo": "../images/candyjar.webp",
+            "membershipLevel": "Bronze",
+            "other": ""
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackfoot Chamber of Commerce Site Project</title>
+
+    <meta name="description" content="Jeff Bench's WDD 230 Web Frontend Development Chamber Directory">
+    <meta name="author" content="Jeff Bench">
+    <meta property="og:title" content="Blackfoot Chamber of Commerce Directory Website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jrbench0925.github.io/wdd230/chamber/directory.html">
+    <meta property="og:image" content="https://www.cityofblackfoot.org/ImageRepository/Document?documentID=1688">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+
+<body>
+    <header class="headergrid">
+        <img src="images/water-tower.webp" alt="Chamber Logo">
+        <h1>Blackfoot Chamber of Commerce</h1>
+        <div id="hamburger"></div>
+    </header>
+    <main>
+        <nav>
+            <ul class="navigation">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <div class="directoryMenu">
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            </div>
+            <div id="membersData" class="directoryGrid"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Jeff Bench | Idaho, USA
+            <img class="logo" src="../images/idaho_flag.webp" alt="Idaho Flag">
+        </p>
+        <p>BYU-Idaho | WDD 230 | Chamber of Commerce Project</p>
+        <p>Last Modified <span id="lastModified"></span></p>
+        <div class="social">
+            <a href="https://www.facebook.com/BlackfootChamber/?ref=aymt_homepage_panel&eid=ARCLKCAvf8dlATXrAScofAAGO3c82oWlGhfMFyO58H-vH2ch9PIFXti22S_jHeX_XWHUFI-zyUOc4NnL"
+                target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="#"><img src="images/x.webp" alt="X"></a>
+            <a href="https://www.instagram.com/blackfootchamber/" target="_blank"><img src="images/instagram.webp"
+                    alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+
+</html>
