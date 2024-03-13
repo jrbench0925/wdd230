@@ -34,20 +34,18 @@ function displayLinks(links) {
         if (mode === 'grid') {
             article.innerHTML = `
                 <img src="${link.logo}" alt="${link.name}">
-                <p>${link.membershipLevel}</p>
                 <p>${link.address}</p>
                 <p>${link.phone}</p>
-                <p><a href="${link.linkedin}">${link.linkedin}</a></p>
                 <p><a href="${link.website}">${link.website}</a></p>
+                <p>${link.membershipLevel}</p>
             `;
         } else if (mode === 'list') {
             article.innerHTML = `
                 <h3>${link.name}</h3>
-                <p>${link.membershipLevel}</p>
                 <p>${link.address}</p>
                 <p>${link.phone}</p>
-                <p><a href="${link.linkedin}">${link.linkedin}</a></p>
                 <p><a href="${link.website}">${link.website}</a></p>
+                <p>${link.membershipLevel}</p>
             `;
         }
 
