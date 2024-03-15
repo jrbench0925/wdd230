@@ -66,10 +66,11 @@
             </section>
             <section class="card">
                 <h3>Weather</h3>
-                <p>Temperature: <span id="temperature">15°F</span><br>
-                    Wind Speed: <span id="windSpeed"> 10 mph</span><br>
-                    Wind Chill: <span id="windChill"></span></p>
-                <p><img src="images/groundhog.webp" alt="groundhog"></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <p><span id="current-temp"></span></p>
+                    <figcaption></figcaption>
+                </figure>
             </section>
         </div>
         <label class="switch">
@@ -94,6 +95,7 @@
     <script src="../scripts/getdates.js"></script>
     <script src="scripts/dark.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
