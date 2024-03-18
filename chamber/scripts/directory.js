@@ -29,7 +29,8 @@ function displayLinks(links) {
     membersData.innerHTML = '';
     links.forEach(link => {
         const article = document.createElement('article');
-        
+        article.classList.add('directorylist');
+
 
         if (mode === 'grid') {
             article.innerHTML = `

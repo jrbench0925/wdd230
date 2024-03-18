@@ -21,6 +21,50 @@ body {
 
 /*Join page CSS */
 
+/*directory*/
+.directoryMenu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.directoryMenu button {
+    padding: .5rem;
+    font-weight: 500;
+}
+
+.directoryGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 15px;
+}
+
+.directorylist {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #0096ff;
+}
+
+.directorylist a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#membersData {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 800px;
+    background-color: var(--third-color);
+    border: solid black .25rem;
+    grid-gap: 10px;
+
+}
+
+/*end directory*/
+
 .join-container {
     float: left;
     width: 50%;
@@ -199,7 +243,7 @@ footer span {
     background-color: var(--primary-color);
 }
 
-.navigation a .navigation a:visited {
+.navigation a .navigation a:visited .directorylist a:visited {
     color: white;
 }
 
