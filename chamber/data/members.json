@@ -5,7 +5,7 @@
             "address": "1858 West Bridge St",
             "phone": "208-785-2274",
             "website": "https://www.ptius.net/",
-            "logo": "../images/pti.webp",
+            "logo": "images/pti.webp",
             "membershipLevel": "Gold",
             "other": ""
         },

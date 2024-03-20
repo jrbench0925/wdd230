@@ -8,8 +8,7 @@ gridbutton.addEventListener("click", () => {
     display.classList.add("grid");
     display.classList.remove("list");
 });
-
-listbutton.addEventListener("click", showList);
+let mode = 'grid';
 
 function showList() {
     display.classList.add("list");
@@ -17,7 +16,7 @@ function showList() {
 }
 
 
-let mode = 'grid';
+
 
 async function getLinks() {
     const response = await fetch(url);
