@@ -19,50 +19,75 @@ body {
     background-color: var(--primary-color);
 }
 
-/*Join page CSS */
-
 /*directory*/
+
+.directorylist a, .directorylist a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.directorylist a:hover{
+    font-size: 1.5em;
+}
+
+#directory {
+    max-width: 800px;
+}
+
 .directoryMenu {
     margin: 1rem auto;
     padding: 0.5rem;
     text-align: center;
 }
 
-.directoryMenu button {
-    padding: .5rem;
-    font-weight: 500;
+button {
+    background-color: var(--third-color);
+    color: white;
 }
 
-.directoryGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    margin: 15px;
+.directoryMenu button {
+    padding: 1rem;
 }
 
 .directorylist {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #0096ff;
-}
-
-.directorylist a {
-    color: white;
-    text-decoration: none;
-}
-
-
-#membersData {
-    margin: 0 auto;
-    padding: 0.5rem;
-    max-width: 800px;
     background-color: var(--third-color);
-    border: solid black .25rem;
-    grid-gap: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    margin: 25px;
 
 }
 
+.grid .directorylist {
+    text-align: center;
+}
+
+.grid .directorylist>* {
+    margin: 0 auto;
+}
+
+.list {
+    margin: 25px;
+}
+
+.list .directorylist {
+    margin: 5px;
+}
+
+.list .directorylist h3 {
+    font-size: 1rem;
+}
+
+img {
+    height: 75px;
+    max-width: 100%;
+}
 
 /*end directory*/
 

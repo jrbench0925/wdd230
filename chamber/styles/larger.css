@@ -1,15 +1,23 @@
 @media only screen and (min-width: 768px) {
 
-    .directoryGrid {
+    /*directory */
+
+    .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .list .directorylist { 
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+    #directory {
+        margin: 1%;
+        max-width: 100%;
     }
 
+    .list .directorylist {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    /*end directory */
     .join-container {
         float: left;
         width: 40%;
