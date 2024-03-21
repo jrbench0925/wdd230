@@ -21,11 +21,10 @@ body {
 
 /*directory*/
 
-.directorylist a, .directorylist a:visited{
+.navigation a, .navigation a:visited, .directorylist a:visited, .directorylist a {
     color: white;
     text-decoration: none;
 }
-
 .directorylist a:hover{
     font-size: 1.5em;
 }
@@ -269,9 +268,7 @@ footer span {
     background-color: var(--primary-color);
 }
 
-.navigation a .navigation a:visited .directorylist a:visited {
-    color: white;
-}
+
 
 #visitCount,
 #hamburger,
@@ -350,7 +347,9 @@ footer {
 .navigation {
     margin-left: 10px;
     text-align: center;
-    background-color: var(--primary-color);
+    display: grid;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .cardsdiv {
@@ -454,6 +453,7 @@ header img {
 
 .navigation a:hover {
     background-color: var(--link-hover-color);
+    font-size: 1.5em;
 }
 
 .navigation a:visited,

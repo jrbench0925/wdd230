@@ -1,5 +1,18 @@
 @media only screen and (min-width: 768px) {
 
+    .navigation {
+        grid-column: 1 / 6;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navigation li {
+        outline: 2px solid #000080;
+        font-size: 30px;
+        background-color: var(--third-color);
+    }
     /*directory */
 
     .grid {
