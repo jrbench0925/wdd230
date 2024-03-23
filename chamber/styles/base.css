@@ -26,6 +26,28 @@
     --link-hover-color: #808080;
 }
 
+.banner-container {
+    background-color: var(--third-color);
+    padding: 20px; 
+    border: 2px solid black;
+}
+
+.banner {
+    background-color: var(--third-color);
+    text-align: center;
+}
+
+#banner p {
+    background-color: var(--third-color);
+}
+
+.message {
+    display: inline-block; 
+}
+
+.close-button {
+    margin-top: 10px; 
+}
 
 body {
     background-color: var(--primary-color);
@@ -322,7 +344,7 @@ footer {
     grid-area: sb1;
     padding: 20px;
     background-color: #002244;
-    border: 10px solid
+    border: 10px solid;
 }
 
 .sidebar p,
