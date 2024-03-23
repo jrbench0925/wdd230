@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         banner.style.display = "none";
     }
-    //banner.style.display = 'block'; //check banner
+
     closeBtn.addEventListener("click", function () {
         banner.style.display = "none";
     });
