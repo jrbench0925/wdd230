@@ -11,4 +11,4 @@ let temperatureValue = parseFloat(document.getElementById("temperature").innerTe
 let windSpeedValue = parseFloat(document.getElementById("windSpeed").innerText);
 let windChillValue = calculateWindChill(temperatureValue, windSpeedValue);
 
-document.getElementById("windChill").innerText = windChillValue + "°F";
+document.getElementById("wind-chill").innerText = windChillValue + "°F";

@@ -42,10 +42,10 @@
         </nav>
         <div class="eye-catcher">
             <picture>
-                <source media="(max-width: 400px)" srcset="images/wdd230-org-small.webp">
-                <source media="(max-width: 680px)" srcset="images/wdd230-org-medium.webp">
-                <source media="(max-width: 960px)" srcset="images/wdd230-org-large.webp">
-                <img src="images/wdd230-org-large.webp" alt="Lunch Meeting">
+                <source media="(max-width: 400px)" srcset="images/blackfoot-small.webp">
+                <source media="(max-width: 680px)" srcset="images/blackfoot-medium.webp">
+                <source media="(max-width: 960px)" srcset="images/blackfoot-large.webp">
+                <img src="images/blackfoot-large.webp" alt="Lunch Meeting">
             </picture>
         </div>
         <div class="cardsdiv">
@@ -64,13 +64,19 @@
                     eaque, officia suscipit excepturi aliquid velit iure minus maxime saepe odit aliquam qui beatae
                     dolorum odio omnis.</p>
             </section>
-            <section class="card">
-                <h3>Weather</h3>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <p><span id="current-temp"></span></p>
-                    <figcaption></figcaption>
-                </figure>
+            <section id="weather-card" class="card">
+                <h3>Current Weather</h3>
+                <article id="currentWeather" class="weather-section">
+                    <figure>
+                        <p><span id="current-temp"></span></p>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+                <article id="five-day-forecast" class="weather-section">
+                    <h3>Five Day Forecast</h3>
+                    <div id="weatherForecast"></div>
+                </article>
             </section>
         </div>
         <label class="switch">
@@ -94,7 +100,6 @@
     </footer>
     <script src="../scripts/getdates.js"></script>
     <script src="scripts/dark.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/weather.js"></script>
 </body>
 
