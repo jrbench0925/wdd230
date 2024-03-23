@@ -574,98 +574,99 @@ input:checked+.slider:before {
     #weatherForecast>div {
         width: 100%;
         margin: 10px 0;
+    }
 
-        header {
-            padding-bottom: 50px;
-        }
+    header {
+        padding-bottom: 50px;
+    }
 
-        .headergrid {
-            height: auto;
-            width: auto;
-        }
+    .headergrid {
+        height: auto;
+        width: auto;
+    }
 
-        .headergrid img {
-            display: none;
-        }
+    .headergrid img {
+        display: none;
+    }
 
-        .headergrid h1 {
-            grid-column: 1/5;
-            text-align: center;
-            font-size: 25px;
-        }
+    .headergrid h1 {
+        grid-column: 1/5;
+        text-align: center;
+        font-size: 25px;
+    }
 
-        #hamburger {
-            grid-row: 2/3;
-            grid-column: 3/4;
-            margin-top: auto;
-            position: relative;
-            display: block;
-            font-size: 2rem;
-            font-weight: 600;
-        }
+    #hamburger {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        margin-top: auto;
+        position: relative;
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+    }
 
-        .navigation {
-            display: grid;
-            margin: 0 auto;
-            padding: 0;
-        }
+    .navigation {
+        display: grid;
+        margin: 0 auto;
+        padding: 0;
+    }
 
-        .navigation li {
-            display: none;
-        }
+    .navigation li {
+        display: none;
+    }
 
-        .navigation li a {
-            text-decoration: none;
-
-        }
-
-        .show li {
-            display: block;
-
-        }
-
-        .show li a {
-            display: block;
-            font-size: 15px;
-
-        }
-
-        #hamburger::before {
-            font-size: 2rem;
-            content: "☰";
-        }
-
-        #hamburger.show::before {
-            font-size: 2rem;
-            content: "X";
-        }
-
-        .card h3 {
-            text-align: center;
-        }
-
-        .card:nth-child(2) {
-            grid-column: 1 / span 2;
-        }
-
-        .card:nth-child(3) {
-            grid-column: 1 / span 2;
-        }
-
-        .sidebar {
-
-            grid-template-columns: 100%;
-            grid-template-rows: repeat(9, 1fr);
-            grid-template-areas:
-                "sb1"
-                "sb2"
-                "sb3"
-                "ph1"
-                "ph2"
-                "ph3"
-                "ph4"
-                "ph5"
-                "ph6";
-        }
+    .navigation li a {
+        text-decoration: none;
 
     }
+
+    .show li {
+        display: block;
+
+    }
+
+    .show li a {
+        display: block;
+        font-size: 15px;
+
+    }
+
+    #hamburger::before {
+        font-size: 2rem;
+        content: "☰";
+    }
+
+    #hamburger.show::before {
+        font-size: 2rem;
+        content: "X";
+    }
+
+    .card h3 {
+        text-align: center;
+    }
+
+    .card:nth-child(2) {
+        grid-column: 1 / span 2;
+    }
+
+    .card:nth-child(3) {
+        grid-column: 1 / span 2;
+    }
+
+    .sidebar {
+
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas:
+            "sb1"
+            "sb2"
+            "sb3"
+            "ph1"
+            "ph2"
+            "ph3"
+            "ph4"
+            "ph5"
+            "ph6";
+    }
+
+}
