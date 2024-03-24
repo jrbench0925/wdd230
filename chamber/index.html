@@ -9,7 +9,8 @@
 
     <meta name="description" content="Jeff Bench's WDD 230 Web Frontend Development Chamber Site">
     <meta name="author" content="Jeff Bench">
-    <meta property="og:title" content="Blackfoot Chamber of Commerce Website">
+    <meta property="og:title"
+        content="Blackfoot Chamber of Commerce Website showcasing current events and business is the Greater Blackfoot Area">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jrbench0925.github.io/wdd230/chamber/index.html">
     <meta property="og:image" content="https://www.cityofblackfoot.org/ImageRepository/Document?documentID=1688">
@@ -28,18 +29,16 @@
         <img src="images/water-tower.webp" alt="Chamber Logo">
         <h1>Blackfoot Chamber of Commerce</h1>
         <div id="hamburger"></div>
-    </header>
-    <main>
-
         <nav>
             <ul class="navigation">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./discover.html">Discover</a></li>
                 <li><a href="./directory.html">Directory</a></li>
                 <li><a href="./join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+    </header>
+    <main>
         <div class="eye-catcher">
             <picture>
                 <source media="(max-width: 400px)" srcset="images/blackfoot-small.webp">
@@ -49,8 +48,8 @@
             </picture>
         </div>
         <div class="cardsdiv">
-            <section class="card">
-                <h3><a href="./join.html">Join the Chamber</a></h3>
+            <section class="card" id="joincard">
+                <h2><a href="./join.html">Join the Chamber</a></h2>
                 <div class="banner-container">
                     <div id="banner" class="banner">
                         <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
@@ -58,20 +57,23 @@
                     </div>
                 </div>
             </section>
-            <section class="card">
-                <h3>Current Events go here</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, odit, ipsam nulla quis dolorum
-                    alias excepturi possimus ratione et explicabo facilis cumque recusandae, sit numquam doloremque. Aut
-                    suscipit voluptas obcaecati.</p>
+            <section class="card" id="current-events-card">
+                <h2>Current Events</h2>
+                <div class="current-events">
+                    <div class="card" id="event1">Potato Museum Business Tour <br> April 4</div>
+                    <div class="card" id="event2">Chamber Luncheon <br> April 17</div>
+                    <div class="card" id="event3">Celebrate Blackfoot Event and Car Show <br> June 29</div>
+                    <div class="card" id="event4">Eastern Idaho State Fair <br> Aug 30 - Sep 7</div>
+                </div>
             </section>
-            <section class="card">
-                <h3>Company Spotlights</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur error adipisci vel, maiores
-                    eaque, officia suscipit excepturi aliquid velit iure minus maxime saepe odit aliquam qui beatae
-                    dolorum odio omnis.</p>
+            <section class="card" id="spotlights-card">
+                <h2>Company Spotlights</h2>
+                <section class="spotlights">
+                    <div class="card" id="company-spotlight"></div>
+                </section>
             </section>
             <section id="weather-card" class="card">
-                <h3>Current Weather</h3>
+                <h2>Current Weather</h2>
                 <article id="currentWeather" class="weather-section">
                     <figure>
                         <p><span id="current-temp"></span></p>
@@ -80,7 +82,7 @@
                     </figure>
                 </article>
                 <article id="five-day-forecast" class="weather-section">
-                    <h3>Five Day Forecast</h3>
+                    <h2>Five Day Forecast</h2>
                     <div id="weatherForecast"></div>
                 </article>
             </section>
@@ -108,6 +110,7 @@
     <script src="scripts/dark.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 
 </html>

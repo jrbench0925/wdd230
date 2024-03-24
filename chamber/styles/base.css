@@ -1,21 +1,21 @@
 :root {
     --link-hover-color: #4B9CD3;
-    color: #ffffff;
+    --text-color: #ffffff;
     --primary-color: #002244;
-    --secondary-color: #faebd7;
-    --third-color: #0f2a72;
+    --secondary-color: #0f2a72;
+    --third-color: #add8e6;
     --border-color: #a9a9a9;
     background-color: var(--primary-color);
-
 }
 
 .light-mode {
     --primary-color: #002244;
-    --secondary-color: #faebd7;
+    --secondary-color: #0f2a72;
     --link-hover-color: #4B9CD3;
-    color: #ffffff;
-    --third-color: #0f2a72;
+    --text-color: #ffffff;
+    --third-color: #add8e6;
     --border-color: #a9a9a9;
+    background-color: var(--primary-color);
 }
 
 .dark-mode {
@@ -24,94 +24,182 @@
     --third-color: #808080;
     --main-bg-color: #000000;
     --link-hover-color: #808080;
-}
-
-.card a {
-    color: white;
-    text-decoration: none;
-}
-
-.banner-container {
-    background-color: var(--second-color);
-    padding: 20px;
-}
-
-.banner {
-    background-color: var(--second-color);
-    text-align: center;
-}
-
-#banner p {
-    background-color: var(--second-color);
-    font-size: 25px;
-}
-
-.message {
-    display: inline-block;
-}
-
-.close-button {
-    margin-top: 10px;
-}
-
-body {
     background-color: var(--primary-color);
 }
 
-.weather-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+html {
+    font-size: 20px;
+    color: var(--text-color);
 }
 
-#weatherForecast {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
-#weatherForecast>div {
-    width: calc(20% - 20px);
-    margin: 10px
+a:hover {
+    background-color: var(--link-hover-color);
+    font-size: 1.5em;
 }
 
-#weatherForecast div {
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 15px;
-    flex: 1;
-    max-width: 20%;
+header,
+footer {
+    margin: 5px;
+}
+
+footer {
     text-align: center;
 }
 
-/* this stays */
-#weatherForecast p,
-#weatherForecast div,
-#weather-icon,
-#currentWeather,
-#currentWeather span,
-#currentTemp,
-#currentWeather p,
-#currentWeather h3 {
-    background-color: var(--third-color);
+header h1 {
+    font-size: 2.5em;
 }
 
-#weatherForecast img,
-#weather-icon {
-    width: 75px;
+.eye-catcher img {
+    width: 99%;
+    height: auto;
+    margin: 5px;
+}
+
+header,
+footer,
+.navigation,
+.card,
+#joincard {
+    background-color: var(--primary-color);
+}
+
+#joincard {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+#weatherForecast div,
+#currentWeather,
+.business-card,
+#event1,
+#event2,
+#event3,
+#event4 {
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.navigation li {
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#event1,
+#event2,
+#event3,
+#event4 {
+    padding: 20px;
+    margin: 10px;
+}
+
+.current-events {
+    display: flex;
+    justify-content: center;
+}
+
+.cardsdiv {
+    text-align: center;
+}
+
+.business-card img {
+    margin-top: 10px;
+}
+
+#company-spotlight img {
+    max-width: 150px;
     height: auto;
 }
 
-
-#weatherForecast div,
-#currentWeather {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
+.logo {
+    height: 20px;
+    width: auto;
 }
 
-/*directory*/
+.social {
+    position: static;
+}
+
+.social img {
+    height: 25px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    top: 1rem;
+    right: 1rem;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2196F3;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #808080;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
 
 .navigation a,
 .navigation a:visited,
@@ -119,6 +207,10 @@ body {
 .directorylist a {
     color: white;
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 .directorylist a:hover {
@@ -136,7 +228,7 @@ body {
 }
 
 button {
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     color: white;
 }
 
@@ -145,9 +237,9 @@ button {
 }
 
 .directorylist {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--border-color);
     padding: 0.5rem;
-    background-color: var(--third-color);
+    background-color: var(--second-color);
 }
 
 .grid {
@@ -184,8 +276,6 @@ img {
     max-width: 100%;
 }
 
-/*end directory*/
-
 .join-container {
     float: left;
     width: 50%;
@@ -201,7 +291,7 @@ img {
     border-radius: 10px;
     border: solid var(--border-color);
     margin: 10px;
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     padding: 10px;
 }
 
@@ -215,7 +305,7 @@ h3 {
 .memberLevel,
 .businessInfo,
 .submitBtn {
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
@@ -240,7 +330,7 @@ h3 {
 
 .formHeader {
     font-size: 1.5em;
-    background-color: var(--third-color);
+    background-color: var(--second-color);
 
 }
 
@@ -280,7 +370,31 @@ footer {
     clear: both;
 }
 
-/* End Join Page CSS */
+
+#directory {
+    max-width: 800px;
+}
+
+.directoryMenu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+button {
+    background-color: var(--second-color);
+    color: white;
+}
+
+.directoryMenu button {
+    padding: 1rem;
+}
+
+.directorylist {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    background-color: var(--second-color);
+}
 
 .sidebar {
     margin-top: 10px;
@@ -364,8 +478,6 @@ footer span {
     background-color: var(--primary-color);
 }
 
-
-
 #visitCount,
 #hamburger,
 .headergrid h1 {
@@ -388,212 +500,8 @@ footer span {
     border: 10px solid
 }
 
-
-body {
-    background-color: var(--main-bg-color);
-}
-
-header,
-footer,
-.navigation,
-.card {
-    background-color: var(--primary-color);
-}
-
 figcaption {
     color: white;
-}
-
-.eye-catcher {
-    width: 100%;
-}
-
-.eye-catcher img {
-    width: 100%;
-    height: auto;
-}
-
-header,
-footer {
-    margin: 10px;
-}
-
-.navigation {
-    margin-left: 10px;
-    text-align: center;
-    display: grid;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.cardsdiv {
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card:first-child {
-    grid-column: 1 / span 2;
-}
-
-.card:not(.first-child) {
-    border-radius: 15px;
-}
-
-.card a,
-.card h3,
-.card p,
-.card span {
-    text-decoration: none;
-    background-color: var(--primary-color);
-}
-
-.social {
-    background-color: var(--primary-color);
-}
-
-.card a:hover {
-    background-color: var(--link-hover-color);
-    font-size: 30px;
-}
-
-.card:nth-child(4) {
-    grid-column: 1 / span 2;
-}
-
-.card:nth-child(4) img {
-    height: auto;
-    width: 98%;
-}
-
-#visitcount h2 {
-    justify-content: center;
-}
-
-.card {
-    border: solid #000000;
-    margin: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.logo {
-    height: 20px;
-    width: auto;
-}
-
-.headergrid {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    width: 100%;
-    height: auto;
-}
-
-.headergrid h1 {
-    font-size: 50px;
-    text-align: center;
-    grid-column: 2 / span 5;
-}
-
-#visitCount {
-    grid-column: 3 / span 5;
-    grid-row: 3 / 4;
-}
-
-header img {
-    margin: 10px;
-    width: 100%;
-    height: auto;
-}
-
-.social {
-    position: static;
-}
-
-.social img {
-    height: 25px;
-    width: auto;
-    margin-left: 10px;
-}
-
-.navigation a {
-    text-decoration: none;
-}
-
-.navigation a:hover {
-    background-color: var(--link-hover-color);
-    font-size: 1.5em;
-}
-
-.navigation a:visited,
-.card a:visited {
-    color: #ffffff;
-}
-
-.switch {
-    position: absolute;
-    display: inline-block;
-    top: 1rem;
-    right: 1rem;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #2196F3;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: var(--primary-color);
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #808080;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
 }
 
 @media only screen and (max-width: 469px) {
