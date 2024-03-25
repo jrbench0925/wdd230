@@ -39,9 +39,9 @@ a {
     color: var(--text-color);
 }
 
-a:hover {
+/*a:hover {
     font-size: 1.5em;
-}
+}*/
 
 .reservation-button a:hover {
     font-size: 1em;
