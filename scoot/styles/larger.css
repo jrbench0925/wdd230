@@ -19,7 +19,7 @@
     nav {
         grid-column: 3;
         justify-self: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     nav a {
