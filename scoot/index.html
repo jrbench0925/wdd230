@@ -20,6 +20,7 @@
     <link rel="icon" href="favicon.ico"> <!-- add favicon-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 
 </head>
@@ -35,13 +36,16 @@
             <a href="contact.html" id="contact">Contact</a>
         </nav>
         <div id="contact-info">
-        <p>contact</p>
+            <p>contact</p>
         </div>
     </header>
     <main>
         <div class="eye-catcher">
             <picture>
-                <!-- add pic of cozumel here-->
+                <source media="(max-width: 400px)" srcset="images/beach-small.webp">
+                <source media="(max-width: 680px)" srcset="images/beach-medium.webp">
+                <source media="(max-width: 960px)" srcset="images/beach-large.webp">
+                <img src="images/beach-large.webp" alt="Arial photo">
             </picture>
         </div>
         <h2>Make a Reservation</h2> <!-- button to Reservation page-->
@@ -57,7 +61,7 @@
                     alt="Trip Advisor"></a>
             <!--address-->
         </div>
-        <p>&copy; <span id="copyright"></span> Cenote Recreation Vehicle Rentals | Jeff Bench | Idaho, USA</p>
+        <p>&copy; <span id="copyright"></span>Jeff Bench</p>
     </footer>
 
 </body>

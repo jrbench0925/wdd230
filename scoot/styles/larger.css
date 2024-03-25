@@ -1,0 +1,41 @@
+@media only screen and (min-width: 469px) {
+
+header {
+    position: sticky; /* might need to change this to fixed */
+    top: 0; 
+    z-index: 1000; 
+    width: 100%; 
+    display: grid;
+    grid-template-columns: auto 10em 1fr auto auto;
+    align-items: center;
+    padding: 5px;
+}
+
+header p {
+    grid-column: 2;
+    text-align: center;
+}
+
+nav {
+    grid-column: 3;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+nav a {
+    padding: 10px;
+}
+
+#contact-info {
+    grid-column: 4;
+    justify-self: center;
+    margin-right: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+}

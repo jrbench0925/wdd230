@@ -15,15 +15,11 @@ html {
 
 header {
     background-color: var(--primary-color);
-    display: grid;
-    grid-template-columns: auto 10em 1fr auto auto;
-    align-items: center;
-    padding: 5px
 }
 
-header p {
-    grid-column: 2;
-    text-align: center;
+footer{
+    font-size: .75em;
+    background-color: var(--primary-color);
 }
 
 header img {
@@ -31,25 +27,13 @@ header img {
     height: auto;
 }
 
-nav {
-    grid-column: 3;
-    justify-self: center;
-    justify-content: space-between;
-}
-
-nav a {
-    padding: 10px;
-}
-
-#contact-info {
-    grid-column: 4;
-    justify-self: center;
-    margin-right: 15px;
-}
-
 a {
     text-decoration: none;
-    color: var(--text-color)
+    color: var(--text-color);
+}
+
+a:hover {
+    font-size: 1.5em;
 }
 
 .social img {
@@ -58,12 +42,13 @@ a {
     margin-left: 10px;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    font-size: .75em;
-    background-color: var(--primary-color);
-    align-items: center;
-}
-
 /* end use all */
+
+@media only screen and (max-width: 469px) {
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
