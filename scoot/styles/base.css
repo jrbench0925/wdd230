@@ -53,6 +53,18 @@ a:hover {
     margin-left: 10px;
 }
 
+.map-container{
+    max-width: 640px;
+    height: auto;
+    border: 5px solid var(--border-color);
+    padding: 1px;
+}
+
+.map {
+    width: 100%;
+    height: auto;
+}
+
 /* end use all */
 
 @media only screen and (max-width: 469px) {
