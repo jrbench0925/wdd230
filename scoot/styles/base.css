@@ -1,0 +1,31 @@
+:root {
+
+    --primary-color: #1cbab7;
+    --secondary-color: #0f2a72;
+    --third-color: #add8e6;
+    --text-color: #ffffff;
+    --border-color: #a9a9a9;
+    background-color: #1cbab7;
+}
+
+/*Used on all pages */
+
+html{
+    color: var(--text-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color)
+}
+#headerElement img{
+    max-width: 150px;
+    height: auto;
+}
+
+.social img {
+    height: 25px;
+    width: auto;
+    margin-left: 10px;
+}
+
+/* end use all */
