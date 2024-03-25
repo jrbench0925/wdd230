@@ -1,42 +1,62 @@
 @media only screen and (min-width: 469px) {
 
-header {
-    position: sticky; /* might need to change this to fixed */
-    top: 0; 
-    z-index: 1000; 
-    width: 100%; 
-    display: grid;
-    grid-template-columns: auto 10em 1fr auto auto;
-    align-items: center;
-    padding: 5px;
-}
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 10em 1fr auto auto;
+        align-items: center;
+        padding: 5px;
+    }
 
-header p {
-    grid-column: 2;
-    text-align: center;
-}
+    header p {
+        grid-column: 2;
+        text-align: center;
+    }
 
-nav {
-    grid-column: 3;
-    justify-self: center;
-    justify-content: space-between;
-}
+    nav {
+        grid-column: 3;
+        justify-self: center;
+        justify-content: space-between;
+    }
 
-nav a {
-    padding: 100px;
-    font-size: 1.25em;
-}
+    nav a {
+        padding: 100px;
+        font-size: 1.25em;
+    }
 
-#contact-info {
-    grid-column: 4;
-    justify-self: center;
-    margin-right: 15px;
-}
+    #contact-info {
+        grid-column: 4;
+        justify-self: center;
+        margin-right: 15px;
+    }
 
-footer {
-    display: flex;
-    flex-direction: column;
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    align-items: center;
-}
+    .eye-catcher {
+        position: relative;
+        display: inline-block;
+    }
+
+    .eye-catcher img {
+        display: block;
+    }
+
+    .eye-catcher h2 {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        opacity: 0.75;
+    }
+
 }

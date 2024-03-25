@@ -5,6 +5,8 @@
     --third-color: #add8e6;
     --text-color: #ffffff;
     --border-color: #a9a9a9;
+    --link-hover-color: #4B9CD3;
+    --secondary-text: #faebd7;
 }
 
 /*Used on all pages */
@@ -13,11 +15,16 @@ html {
     color: var(--text-color);
 }
 
+h2{
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
 header {
     background-color: var(--primary-color);
 }
 
-footer{
+footer {
     font-size: .75em;
     background-color: var(--primary-color);
 }
@@ -33,7 +40,11 @@ a {
 }
 
 a:hover {
-    font-size: 1.5em;
+    font-size: 2em;
+}
+
+.reservation-button a:hover {
+    font-size: 1em;
 }
 
 .social img {
@@ -46,7 +57,7 @@ a:hover {
 
 @media only screen and (max-width: 469px) {
 
-    header{
+    header {
         display: grid;
         grid-template-columns: 1fr;
     }
