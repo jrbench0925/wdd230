@@ -73,9 +73,21 @@ a:hover {
 
 @media only screen and (max-width: 469px) {
 
-    header {
-        display: grid;
+    #headerElement {
         grid-template-columns: 1fr;
+        grid-template-rows: auto; /* remove? */
+        text-align: center;
+      }
+    
+      #headerElement img {
+        grid-column: 1 / -1;
+      }
+    
+      #headerElement a {
+        display: block;
+        margin-bottom: 10px;
+      }
+    
     }
 
 }

@@ -1,32 +1,23 @@
 @media only screen and (min-width: 469px) {
 
-    header {
+    #headerElement {
         display: grid;
-        grid-template-columns: auto 10em 1fr auto auto;
+        grid-template-columns: auto auto 1fr;
         align-items: center;
-        padding: 5px;
     }
 
-    header p {
-        grid-column: 2;
-        text-align: center;
+    .logo {
+        width: 50px;
+        height: auto;
     }
 
-    nav {
-        grid-column: 3;
-        justify-self: center;
-        justify-content: space-evenly;
+    .company-name{
+        align-items: center;
+        margin-top: -10px;
     }
 
-    nav a {
-        padding: 100px;
-        font-size: 1.25em;
-    }
-
-    #contact-info {
-        grid-column: 4;
-        justify-self: center;
-        margin-right: 15px;
+    .nav-link {
+        margin: 0 5%;
     }
 
     footer {
@@ -42,6 +33,11 @@
 
     .eye-catcher img {
         display: block;
+    }
+
+    .close-button {
+        background-color: var(--primary-color);
+        opacity: 0.75;
     }
 
     .eye-catcher h2 {
