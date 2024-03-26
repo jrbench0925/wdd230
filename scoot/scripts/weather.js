@@ -76,5 +76,32 @@ async function displayForecast() {
     }
 }
 
+async function displayHighTemp() {
+    const forecastData = await fetchWeatherData(forecastUrl);
+    if (forecastData) {
+        const today = new Date();
+        const todayString = today.toISOString().split('T')[0]; // Get today's date in string format (YYYY-MM-DD)
+
+        let highestTemp = -200; // Initialize highest temperature to a very low value
+        for (const item of forecastData.list) {
+            // Check if the date of the forecast item matches today's date
+            const forecastDate = new Date(item.dt * 1000).toISOString().split('T')[0];
+            if (forecastDate === todayString) {
+                const temp = item.main.temp;
+                if (temp > highestTemp) {
+                    highestTemp = temp; // Update highest temperature if current temperature is higher
+                }
+            }
+        }
+
+        // Display the high temperature message
+        const highTempMessage = document.getElementById('high-temp-message');
+        if (highTempMessage) {
+            highTempMessage.innerHTML = `<h1>Today's high temperature: ${highestTemp.toFixed(0)}&deg;F <button id="tempButton" class="tempButton">X</button></h1>`;
+        }
+    }
+}
+
 displayWeather();
 displayForecast();
+displayHighTemp();

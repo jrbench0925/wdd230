@@ -22,10 +22,10 @@ h2{
 
 header {
     background-color: var(--primary-color);
-            position: sticky;
-        top: 0;
-        z-index: 1000;
-        width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 footer {
@@ -47,7 +47,11 @@ a:hover {
     font-size: 1.25em;
 }
 
-.reservation-button a:hover {
+#high-temp-message, .tempButton {
+    background-color: red;
+}
+
+.reservation-button a:hover { /* THIS DOES NOTHING */
     font-size: 1em;
 }
 
