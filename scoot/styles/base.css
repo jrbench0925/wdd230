@@ -15,7 +15,7 @@ html {
     color: var(--text-color);
 }
 
-h2{
+h2 {
     color: var(--text-color);
     background-color: var(--primary-color);
 }
@@ -47,12 +47,18 @@ a:hover {
     font-size: 1.25em;
 }
 
-#high-temp-message, .tempButton {
+#high-temp-message {
     background-color: red;
+    border: solid;
 }
 
-.reservation-button a:hover { /* THIS DOES NOTHING */
-    font-size: 1em;
+.tempButton {
+    background-color: red;
+    color: var(--text-color);
+    padding: 5px;
+    margin: 5px;
+    border: solid 2px;
+    border-color: var(--border-color);
 }
 
 .social img {
@@ -61,7 +67,7 @@ a:hover {
     margin-left: 10px;
 }
 
-.map-container{
+.map-container {
     max-width: 640px;
     height: auto;
     border: 5px solid var(--border-color);
@@ -79,19 +85,20 @@ a:hover {
 
     #headerElement {
         grid-template-columns: 1fr;
-        grid-template-rows: auto; /* remove? */
+        grid-template-rows: auto;
+        /* remove? */
         text-align: center;
-      }
-    
-      #headerElement img {
+    }
+
+    #headerElement img {
         grid-column: 1 / -1;
-      }
-    
-      #headerElement a {
+    }
+
+    #headerElement a {
         display: block;
         margin-bottom: 10px;
-      }
-    
     }
+
+}
 
 }
