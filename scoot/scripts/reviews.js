@@ -40,7 +40,7 @@ async function displayRandomReviews() {
                 <h3>${review.author}</h3>
                 <p>Rating: ${review.rating}</p>
                 <p>${review.comment}</p>
-                <p>Date: ${review.date}</p>
+                <p>${review.date}</p>
             `;
             reviewsContainer.appendChild(reviewDiv);
         });
