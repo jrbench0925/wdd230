@@ -50,5 +50,4 @@ async function displayRentalInformation() {
     }
 }
 
-// Call the function
 displayRentalInformation();
