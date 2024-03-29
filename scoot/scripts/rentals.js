@@ -36,10 +36,10 @@ async function displayRentalInformation() {
                 <h3>${vehicle.rental_type}</h3>
                 <img src="${vehicle.photo}" alt="${vehicle.rental_type}">
                 <p>Max Persons: ${vehicle.max_persons}</p>
-                <p>Reservation Half Day: ${vehicle.reservation_half_day}</p>
-                <p>Reservation Full Day: ${vehicle.reservation_full_day}</p>
-                <p>Walk-in Half Day: ${vehicle.walk_in_half_day}</p>
-                <p>Walk-in Full Day: ${vehicle.walk_in_full_day}</p>
+                <p>Reservation Half Day: $${vehicle.reservation_half_day}</p>
+                <p>Reservation Full Day: $${vehicle.reservation_full_day}</p>
+                <p>Walk-in Half Day: $${vehicle.walk_in_half_day}</p>
+                <p>Walk-in Full Day: $${vehicle.walk_in_full_day}</p>
             `;
 
             vehicleDiv.appendChild(vehicleInfo);
