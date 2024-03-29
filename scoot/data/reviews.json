@@ -1,0 +1,75 @@
+{
+    "business": "Cenote Recreational Vehicle Rentals",
+    "reviews": [
+        {
+            "review_number": 1,
+            "author": "Alex Johnson",
+            "rating": "★★★★★",
+            "comment": "Had a fantastic experience renting a scooter from Cenote! The staff was friendly and helpful, and the scooter was in great condition. Exploring Cozumel's beautiful landscapes was the highlight of my trip. Highly recommend!",
+            "date": "2023-03-15"
+        },
+        {
+            "review_number": 2,
+            "author": "Rachel Davis",
+            "rating": "★★★★☆",
+            "comment": "Renting a scooter from Cenote was a breeze! The process was smooth, and the scooter was well-maintained. It made getting around Cozumel so much easier. Will definitely rent from them again!",
+            "date": "2023-03-20"
+        },
+        {
+            "review_number": 3,
+            "author": "Max Smith",
+            "rating": "★★★★☆",
+            "comment": "Had a great time exploring Cozumel with a motorcycle from Cenote! The motorcycle was a blast to ride, and we had no issues during our rental. The staff provided helpful tips for our adventure. Would rent again!",
+            "date": "2023-03-25"
+        },
+        {
+            "review_number": 4,
+            "author": "Sophia Martinez",
+            "rating": "★★★☆☆",
+            "comment": "Overall, renting a scooter from Cenote was a good experience. The scooter was fine, but the booking process took longer than expected. However, once we got on the road, it was worth it!",
+            "date": "2023-03-28"
+        },
+        {
+            "review_number": 5,
+            "author": "Ethan Wilson",
+            "rating": "★★★★☆",
+            "comment": "Rented a motorcycle from Cenote for a day of exploring Cozumel. The motorcycle was in good condition, and the staff provided a map with recommended routes. Enjoyed the ride and the beautiful scenery!",
+            "date": "2023-04-02"
+        },
+        {
+            "review_number": 6,
+            "author": "Ava Thompson",
+            "rating": "★★★★★",
+            "comment": "Cenote provided an excellent experience for our family's scooter rental. The staff was knowledgeable and made sure we were comfortable with operating the scooter before we set off. We had an amazing day exploring Cozumel!",
+            "date": "2023-04-05"
+        },
+        {
+            "review_number": 7,
+            "author": "Mason Brown",
+            "rating": "★★★★☆",
+            "comment": "We rented a motorcycle from Cenote for a day of sightseeing in Cozumel. The motorcycle was clean and ran smoothly. It was a fun and convenient way to explore the island!",
+            "date": "2023-04-10"
+        },
+        {
+            "review_number": 8,
+            "author": "Lily Garcia",
+            "rating": "★★★★☆",
+            "comment": "Had a positive experience renting a scooter from Cenote. The staff was friendly and gave us helpful tips for navigating Cozumel. The scooter was easy to ride and made our trip more enjoyable!",
+            "date": "2023-04-15"
+        },
+        {
+            "review_number": 9,
+            "author": "Oliver Taylor",
+            "rating": "★★★☆☆",
+            "comment": "Rented a motorcycle from Cenote for a day of exploring Cozumel. The motorcycle was decent, but the rental process was a bit slow. However, once we were on the road, it was a great experience!",
+            "date": "2023-04-20"
+        },
+        {
+            "review_number": 10,
+            "author": "Chloe Martinez",
+            "rating": "★★★★☆",
+            "comment": "Had a fun day exploring Cozumel on a scooter rented from Cenote. The scooter was in good condition, and we had no issues during our rental. It was a convenient way to see the island!",
+            "date": "2023-04-25"
+        }
+    ]
+}

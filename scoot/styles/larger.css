@@ -1,14 +1,19 @@
 @media only screen and (min-width: 469px) {
 
+    .social {
+        display: none;
+    }
+
     #headerElement {
         display: grid;
         grid-template-columns: auto auto 1fr;
         align-items: center;
     }
 
-    #high-temp-message{
+    #high-temp-message {
         text-align: center;
     }
+
     .logo {
         width: 75px;
         height: auto;
@@ -18,23 +23,19 @@
         margin: 0 7%;
     }
 
-    .message h1 {
-        background-color: red;
-    }
-
     footer {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .eye-catcher {
-        position: relative;
-        display: inline-block;
-    }
-
-    .eye-catcher img {
-        display: block;
+    .eye-catcher h2 {
+        position: absolute;
+        top: 85%;
+        left: 30%;
+        padding: 10px;
+        text-align: center;
+        opacity: 0.75;
     }
 
     .close-button {
@@ -42,12 +43,50 @@
         opacity: 0.75;
     }
 
-    .eye-catcher h2 {
-        position: absolute;
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
+    #weather,
+    #reviews {
+        display: flex;
+        justify-content: center;
+        margin-top: 1px;
+        padding: 20px;
+        border: 1px solid #ccc;
         text-align: center;
-        opacity: 0.75;
+        gap: 2em;
+        margin-bottom: 1px;
     }
+
+    .forecast-card-container {
+        display: flex;
+        gap: 1em;
+    }
+
+    .forecast-card {
+        padding: 5px 15px 0 15px;
+    }
+
+    .forecast-card h3 {
+        margin: 10px 0 15px 0;
+    }
+
+    .weather h2 {
+        margin: 5px 0 15px 0;
+    }
+
+    .forecast-card img {
+        margin-bottom: -5px;
+    }
+
+    .weather p,
+    .forecast-card p {
+        margin: 0 0 15px;
+    }
+
+    .vehicles-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        background-color: var(--primary-color);
+        margin: 10px 0 0 0;
+    }
+
+}

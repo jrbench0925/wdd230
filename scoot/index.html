@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Cenote Wheels Cozumel Recreational Vehicle Rentals">
+    <meta name="description" content="Cenote Wheels Cozumel Recreational Vehicle Rentals">
     <meta name="author" content="Jeff Bench">
     <title>Cenote Recreational Vehicle Rentals</title>
 
@@ -27,7 +26,7 @@
 
 <body>
     <header id="headerElement">
-            <img src="images/logo.webp" alt="Cenote Logo" class="logo">
+        <img src="images/logo.webp" alt="Cenote Logo" class="logo">
         <div id="hamburger"></div>
         <nav class="nav-links">
             <a href="index.html" class="nav-link">Home</a>
@@ -35,9 +34,21 @@
             <a href="reservations.html" class="nav-link">Reservations</a>
             <a href="contact.html" class="nav-link">Contact</a>
             </div>
- 
+
     </header>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram"></a>
+            <a href="http://www.tripadvisor.com" target="_blank"><img src="images/trip-advisor.webp"
+                    alt="Trip Advisor"></a>
+        </div>
+    </div>
     <main>
+        <div id="weather" class="weather">
+            <div id="current-weather" class="current-weather"></div>
+            <div id="weather-forecast" class="weather-forecast"></div>
+        </div>
         <div id="high-temp-message"></div>
         <div class="eye-catcher">
             <picture>
@@ -46,17 +57,11 @@
                 <source media="(max-width: 960px)" srcset="images/beach-large.webp">
                 <img src="images/beach-large.webp" alt="Arial photo" loading="lazy">
             </picture>
- 
+
             <h2 id="reservation-banner"><a href="reservations.html">Don't miss out on the fun! Make a reservation
                     today </a><button id="closeButton" class="close-button">X</button></h2>
         </div>
-
-        <div id="vehicles"></div>
-        <div id="weather"></div> <!--Add closeable message about todays high temp-->
-        <section id="weather" class="weather">
-            <div id="current-weather" class="current-weather"></div>
-            <section id="weather-forecast" class="weather-forecast"></section>
-        </section>
+        <div id="vehicles" class="vehicles-grid"></div>
         <div id="reviews"></div>
     </main>
     <footer>
@@ -65,12 +70,14 @@
             <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram"></a>
             <a href="http://www.tripadvisor.com" target="_blank"><img src="images/trip-advisor.webp"
                     alt="Trip Advisor"></a>
-            <!--address-->
         </div>
         <p>&copy; <span id="copyright"></span>Jeff Bench</p>
+        <!--address-->
     </footer>
     <script src="scripts/weather.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/reviews.js"></script>
+    <script src="scripts/rentals.js"></script>
 </body>
 
 </html>
