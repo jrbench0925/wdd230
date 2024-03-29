@@ -29,15 +29,6 @@
         align-items: center;
     }
 
-    .eye-catcher h2 {
-        position: absolute;
-        top: 85%;
-        left: 30%;
-        padding: 10px;
-        text-align: center;
-        opacity: 0.75;
-    }
-
     .close-button {
         background-color: var(--primary-color);
         opacity: 0.75;
@@ -91,9 +82,7 @@
     #reservations {
         display: grid;
         grid-template-rows: auto auto auto;
-        background-color: var(--secondary-color);
         gap: 10px;
-
     }
 
     #reservations h2 {

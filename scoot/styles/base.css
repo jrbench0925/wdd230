@@ -13,6 +13,7 @@
 
 html, body {
     color: var(--text-color);
+    background-color: var(--secondary-color);
 }
 
 h2 {
@@ -97,11 +98,6 @@ a:hover {
     width: 2em;
 }
 
-#weather,
-#reviews {
-    background-color: var(--secondary-color);
-}
-
 .weather,
 .forecast-card {
     max-height: 125px;
@@ -143,7 +139,7 @@ a:hover {
   }
 
   .flash{
-    animation: flash 1s infinite;
+    animation: flash 2s infinite;
   }
 
 /* end use all */
