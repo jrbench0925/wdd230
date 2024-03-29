@@ -99,7 +99,7 @@ a:hover {
 
 #weather,
 #reviews {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .weather,
@@ -135,6 +135,16 @@ a:hover {
     padding: 10px;
     background-color: var(--primary-color);
 }
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .flash{
+    animation: flash 1s infinite;
+  }
 
 /* end use all */
 

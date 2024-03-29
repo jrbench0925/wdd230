@@ -1,6 +1,6 @@
 const key = "b0a4948b9228592325bc04add93221f7";
-const lat = 43.191;
-const long = -112.343;
+const lat = 20.514;
+const long = -86.96;
 const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=${key}`;
