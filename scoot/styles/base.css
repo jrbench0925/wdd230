@@ -128,7 +128,7 @@ a:hover {
 #review-1,
 #review-2,
 #review-3,
-#review-4, .vehicle-card {
+#review-4, .vehicle-card, #reservations h2 {
     box-shadow: 0 4px 8px 0;
     border: 2px solid var(--border-color);
     border-radius: 10px;
