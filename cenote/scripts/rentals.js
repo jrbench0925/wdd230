@@ -40,18 +40,28 @@ async function displayRentalInformation() {
             vehicleInfo.classList.add('vehicle-info');
             vehicleInfo.innerHTML = `
                 <h3>${vehicle.rental_type}</h3>
-                <img src="${vehicle.photo}" alt="${vehicle.rental_type}" loading="lazy">
-                <p>Max Persons: ${vehicle.max_persons}</p>
-                <h4>Reservation</h4>
-                <ul> 
-                    <li>Half Day: $${vehicle.reservation_half_day}</li>
-                    <li>Full Day: $${vehicle.reservation_full_day}</li>
-                </ul>
-                <h4>Walk-in</h4>
-                <ul>
-                    <li>Half Day: $${vehicle.walk_in_half_day}</li>
-                    <li>Walk-in Full Day: $${vehicle.walk_in_full_day}</li>
-                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Max Persons</th>
+                            <th>Reservation Half Day (3 hrs)</th>
+                            <th>Reservation Full day</th>
+                            <th>Walk-In Half Day (3 hrs)</th>
+                            <th>Walk-In Full Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>${vehicle.max_persons}</td>
+                            <td>$${vehicle.reservation_half_day}</td>
+                            <td>$${vehicle.reservation_full_day}</td>
+                            <td>$${vehicle.walk_in_half_day}</td>
+                            <td>$${vehicle.walk_in_full_day}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <a href= "reservations.html"><img src="${vehicle.photo}" alt="${vehicle.rental_type}" loading="lazy"></a>
             `;
 
             vehicleDiv.appendChild(vehicleInfo);
