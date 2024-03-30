@@ -91,23 +91,25 @@ async function displayForecast() {
 async function displayHighTemp() {
     const forecastData = await fetchWeatherData(forecastUrl);
     if (forecastData) {
-        const today = new Date();
-        const todayString = today.toISOString().split('T')[0];
-
-        let highestTempF = -200;
+        let highestTempF = -Infinity;
         for (const item of forecastData.list) {
-            const forecastDate = new Date(item.dt * 1000).toISOString().split('T')[0];
-            if (forecastDate === todayString) {
-                const temp = item.main.temp;
-                if (temp > highestTempF) {
-                    highestTempF = temp;
+            const forecastDate = new Date(item.dt * 1000);
+            const today = new Date();
+            if (
+                forecastDate.getDate() === today.getDate() &&
+                forecastDate.getMonth() === today.getMonth() &&
+                forecastDate.getFullYear() === today.getFullYear()
+            ) {
+                const tempF = item.main.temp;
+                if (tempF > highestTempF) {
+                    highestTempF = tempF;
                 }
             }
         }
-        const highestTempC = ((highestTempF - 32) * 5 / 9).toFixed(0);
+        const highestTempC = ((highestTempF - 32) * 5 / 9);
         const highTempMessage = document.getElementById('high-temp-message');
         if (highTempMessage) {
-            highTempMessage.innerHTML = `<h1>Today's high temperature: ${highestTempC}&deg;C (${highestTempF.toFixed(0)}&deg;F) <button id="tempButton" class="tempButton">Close</button></h1>`;
+            highTempMessage.innerHTML = `<h1>Today's high temperature: ${highestTempC.toFixed(0)}&deg;C (${highestTempF.toFixed(0)}&deg;F) <button id="tempButton" class="tempButton">X</button></h1>`;
         }
     }
 }
