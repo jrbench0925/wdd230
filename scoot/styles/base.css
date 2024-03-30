@@ -2,7 +2,9 @@
 
     --primary-color: #1cbab7;
     --secondary-color: #0f2a72;
-    --third-color: #add8e6;
+    --third-color: #328d8d;
+    --table-head: #418cc1;
+    --fourth-color: #7BAFD4;
     --text-color: #000000;
     --border-color: #000000;
     --link-hover-color: #4B9CD3;
@@ -15,16 +17,10 @@ html,
 body {
     color: var(--text-color);
     background-color: var(--secondary-color);
-    font-size: 1em;
 }
 
 h2 {
     background-color: var(--primary-color);
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.5em;
 }
 
 header {
@@ -257,6 +253,24 @@ a:hover {
     grid-gap: 15px;
     background-color: var(--secondary-color);
     margin: 0 0 15px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--fourth-color);
+
+}
+
+th,
+td {
+    border: 2px solid var(--border-color);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--table-head);
 }
 
 /* end use all */
