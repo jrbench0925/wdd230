@@ -34,7 +34,7 @@ async function displayRentalInformation() {
             vehicleInfo.classList.add('vehicle-info');
             vehicleInfo.innerHTML = `
                 <h3>${vehicle.rental_type}</h3>
-                <img src="${vehicle.photo}" alt="${vehicle.rental_type}">
+                <img src="${vehicle.photo}" alt="${vehicle.rental_type}" loading="lazy">
                 <p>Max Persons: ${vehicle.max_persons}</p>
                 <h4>Reservation</h4>
                 <ul> 
