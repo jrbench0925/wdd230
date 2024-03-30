@@ -87,41 +87,6 @@ async function displayForecast() {
     }
 }
 
-/*async function displayForecast() {
-    const forecastData = await fetchWeatherData(forecastUrl);
-    if (forecastData) {
-        const tomorrow = new Date();
-        tomorrow.setDate(tomorrow.getDate() + 1);
-        tomorrow.setHours(15, 0, 0, 0);
- 
-        const forecastSection = document.getElementById('weather-forecast');
-        let forecastHTML = `<p>Tomorrow's Forecast<p>`;
- 
-        for (let i = 0; i < forecastData.list.length; i++) {
-            const item = forecastData.list[i];
-            const date = new Date(item.dt * 1000);
- 
-            if (date.getDate() === tomorrow.getDate() && date.getHours() === 15) {
-                const dayOfWeek = daysOfWeek[date.getDay()];
-                const forecastTime = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-                const temperature = item.main.temp.toFixed(0);
-                const skyConditions = item.weather[0].description;
-                const icon = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
- 
-                forecastHTML += `
-                        <p>${dayOfWeek}, ${forecastTime}</p>
-                        <p>${temperature}&deg;F</p>
-                        <p>${skyConditions}</p>
-                        <img src="${icon}" alt="Weather Icon">
-                `;
- 
-                break;
-            }
-        }
- 
-        forecastSection.innerHTML = forecastHTML;
-    }
-}*/
 
 async function displayHighTemp() {
     const forecastData = await fetchWeatherData(forecastUrl);
@@ -142,7 +107,7 @@ async function displayHighTemp() {
         const highestTempC = ((highestTempF - 32) * 5 / 9).toFixed(0);
         const highTempMessage = document.getElementById('high-temp-message');
         if (highTempMessage) {
-            highTempMessage.innerHTML = `<h1>Today's high temperature: ${highestTempC}&deg;C (${highestTempF.toFixed(0)}&deg;F) <button id="tempButton" class="tempButton">X</button></h1>`;
+            highTempMessage.innerHTML = `<h1>Today's high temperature: ${highestTempC}&deg;C (${highestTempF.toFixed(0)}&deg;F) <button id="tempButton" class="tempButton">Close</button></h1>`;
         }
     }
 }
