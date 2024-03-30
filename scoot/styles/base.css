@@ -16,15 +16,18 @@ body {
     color: var(--text-color);
     background-color: var(--secondary-color);
     font-size: 1em;
+    font-weight: bold;
 }
 
 h2 {
     background-color: var(--primary-color);
     font-size: 2em;
+    font-weight: bold;
 }
 
-h3{
+h3 {
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 header {
@@ -298,7 +301,7 @@ a:hover {
     }
 
     #weather {
-        margin: 200px 0 375px 0;
+        margin: 300px 0 300px 0;
     }
 
     #vehicles {
