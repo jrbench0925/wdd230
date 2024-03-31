@@ -87,29 +87,19 @@ async function displayForecast() {
     }
 }
 
-
 async function displayHighTemp() {
-    const forecastData = await fetchWeatherData(forecastUrl);
-    if (forecastData) {
-        let highestTempF = -Infinity;
-        for (const item of forecastData.list) {
-            const forecastDate = new Date(item.dt * 1000);
-            const today = new Date();
-            if (
-                forecastDate.getDate() === today.getDate() &&
-                forecastDate.getMonth() === today.getMonth() &&
-                forecastDate.getFullYear() === today.getFullYear()
-            ) {
-                const tempF = item.main.temp;
-                if (tempF > highestTempF) {
-                    highestTempF = tempF;
-                }
-            }
-        }
-        const highestTempC = ((highestTempF - 32) * 5 / 9);
+
+    const tempData = await fetchWeatherData(weatherUrl);
+    if (tempData) {
+
+        const highTempF = tempData.main.temp_max;
+        const highTempC = ((highTempF - 32) * 5 / 9);
+
         const highTempMessage = document.getElementById('high-temp-message');
         if (highTempMessage) {
-            highTempMessage.innerHTML = `<h1>Today's high temperature: ${highestTempC.toFixed(0)}&deg;C (${highestTempF.toFixed(0)}&deg;F) <button id="tempButton" class="tempButton">X</button></h1>`;
+            highTempMessage.innerHTML = `<h1>Today's high temperature: ${highTempC.toFixed(0)}&deg;C (${highTempF.toFixed(0)}&deg;F) <button id="tempButton" class="tempButton">X</button></h1>`;
+        } else {
+            console.error('Element with ID "high-temp-message" not found.');
         }
     }
 }
