@@ -38,31 +38,62 @@ async function displayRentalInformation() {
 
             const vehicleInfo = document.createElement('div');
             vehicleInfo.classList.add('vehicle-info');
-            vehicleInfo.innerHTML = `
+            if (window.innerWidth >= 469) {
+                vehicleInfo.innerHTML = `
+                    <h3>${vehicle.rental_type}</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Max Persons</th>
+                                <th>Reservation Half Day (3 hrs)</th>
+                                <th>Reservation Full day</th>
+                                <th>Walk-In Half Day (3 hrs)</th>
+                                <th>Walk-In Full Day</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>${vehicle.max_persons}</td>
+                                <td>$${vehicle.reservation_half_day}</td>
+                                <td>$${vehicle.reservation_full_day}</td>
+                                <td>$${vehicle.walk_in_half_day}</td>
+                                <td>$${vehicle.walk_in_full_day}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <a href= "reservations.html"><img src="${vehicle.photo}" alt="${vehicle.rental_type}" loading="lazy"></a>
+                `;
+            } else {
+                vehicleInfo.innerHTML = `
                 <h3>${vehicle.rental_type}</h3>
                 <table>
-                    <thead>
                         <tr>
                             <th>Max Persons</th>
-                            <th>Reservation Half Day (3 hrs)</th>
-                            <th>Reservation Full day</th>
-                            <th>Walk-In Half Day (3 hrs)</th>
-                            <th>Walk-In Full Day</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
                             <td>${vehicle.max_persons}</td>
+                        </tr>
+                        <tr>
+                            <th>Reservation Half Day (3 hrs)</th>
                             <td>$${vehicle.reservation_half_day}</td>
+                        </tr>
+                        <tr>
+
+                            <th>Reservation Full day</th>
                             <td>$${vehicle.reservation_full_day}</td>
+                        </tr>
+                        <tr>
+                            <th>Walk-In Half Day (3 hrs)</th>
                             <td>$${vehicle.walk_in_half_day}</td>
+                        </tr>
+                        <tr>
+                            <th>Walk-In Full Day</th>
                             <td>$${vehicle.walk_in_full_day}</td>
                         </tr>
-                    </tbody>
-                </table>
+                      </table>
                 <br>
                 <a href= "reservations.html"><img src="${vehicle.photo}" alt="${vehicle.rental_type}" loading="lazy"></a>
             `;
+            }
 
             vehicleDiv.appendChild(vehicleInfo);
             vehiclesContainer.appendChild(vehicleDiv);
@@ -120,4 +151,16 @@ if (document.getElementById('vehicles')) {
 if (document.getElementById('vehicles-main')) {
     displayRentalInformationMain();
 }
+
+window.addEventListener('resize', function () {
+    if (window.innerWidth === 469) {
+
+        if (document.getElementById('vehicles')) {
+            displayRentalInformation();
+        }
+    }
+});
+
+
+
 
