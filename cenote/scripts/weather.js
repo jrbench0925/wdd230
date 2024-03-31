@@ -97,7 +97,7 @@ async function displayHighTemp() {
 
         const highTempMessage = document.getElementById('high-temp-message');
         if (highTempMessage) {
-            highTempMessage.innerHTML = `<h1>Today's high temperature: ${highTempC.toFixed(0)}&deg;C (${highTempF.toFixed(0)}&deg;F) <button id="tempButton" class="tempButton">X</button></h1>`;
+            highTempMessage.innerHTML = `<h1>Today's high temperature: ${highTempC.toFixed(0)}&deg;C (${highTempF.toFixed(0)}&deg;F) <button id="tempButton" class="tempButton">&#10006</button></h1>`;
         } else {
             console.error('Element with ID "high-temp-message" not found.');
         }
