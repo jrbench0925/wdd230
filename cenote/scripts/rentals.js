@@ -120,3 +120,4 @@ if (document.getElementById('vehicles')) {
 if (document.getElementById('vehicles-main')) {
     displayRentalInformationMain();
 }
+
