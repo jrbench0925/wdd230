@@ -44,7 +44,7 @@ async function displayRentalInformation() {
                     <table>
                         <thead>
                             <tr>
-                                <th>Max Persons</th>
+                                <th>Max People</th>
                                 <th>Reservation Half Day (3 hrs)</th>
                                 <th>Reservation Full day</th>
                                 <th>Walk-In Half Day (3 hrs)</th>
@@ -69,7 +69,7 @@ async function displayRentalInformation() {
                 <h3>${vehicle.rental_type}</h3>
                 <table>
                         <tr>
-                            <th>Max Persons</th>
+                            <th>Max People</th>
                             <td>${vehicle.max_persons}</td>
                         </tr>
                         <tr>
@@ -131,8 +131,8 @@ async function displayRentalInformationMain() {
             vehicleInfo.classList.add('vehicle-info');
             vehicleInfo.innerHTML = `
                 <h3>${vehicle.rental_type}</h3>
-                <img src="${vehicle.photo}" alt="${vehicle.rental_type}" loading="lazy">
-                <p>Max Persons: ${vehicle.max_persons}</p>
+                <a href= "reservations.html"><img src="${vehicle.photo}" alt="${vehicle.rental_type}" loading="lazy"></a>
+                <p>Max People: ${vehicle.max_persons}</p>
 
             `;
 
