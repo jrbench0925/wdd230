@@ -87,7 +87,7 @@ a:hover {
     height: auto;
 }
 
-.eye-catcher img {
+#eye-catcher img {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -400,14 +400,6 @@ th {
         flex-direction: column;
     }
 
-    #current-weather {
-        margin-top: 100px;
-    }
-
-    .eye-catcher {
-        margin-top: 425px;
-    }
-
     .forecast-card-container {
         flex-direction: column;
         width: 100%;
@@ -420,4 +412,19 @@ th {
     .island-map img {
         max-width: 90%;
     }
+
+    #rental-weather {
+        margin: 20vh 0 50vh 0;
+    }
+
+    #current-weather {
+        margin-top: 20vh;
+
+    }
+
+    #weather-container {
+        margin-bottom: 50vh;
+
+    }
+
 }
