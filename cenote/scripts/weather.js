@@ -70,7 +70,7 @@ async function displayForecast() {
                     const icon = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
                     forecastHTML += `
                         <div class="forecast-card">
-                            <h3>${dayOfWeek}</h3>
+                            <h2>${dayOfWeek}</h2>
                             <p>${temperatureC}&deg;C (${temperatureF}&deg;F)</p>
                             <p>Humidity: ${humidity}%</p>
                             <p>${skyConditions}</p>

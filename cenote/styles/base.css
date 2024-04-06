@@ -233,8 +233,14 @@ textarea {
     flex-direction: column;
 }
 
-#current-weather h3 {
+#current-weather h2,
+#weather-forecast h2 {
     text-wrap: auto;
+    padding: 5px;
+}
+
+#weather-forecast p {
+    padding: 0 5px 0 5px;
 }
 
 .island-map {
@@ -403,18 +409,16 @@ th {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    #weather {
-        margin: 350px 0 500px 0;
-    }
-
-
-
     .island-map img {
         max-width: 90%;
     }
 
     #current-weather {
-        margin-top: 150px;
+        margin-top: 35%;
+    }
+
+    .forecast-card-container {
+        margin-bottom: 65%;
     }
 
 }
