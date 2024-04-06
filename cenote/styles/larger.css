@@ -34,16 +34,4 @@
     #vehicles {
         margin: 10px 0 10px 0;
     }
-
-}
-
-@media only screen and (max-width: 933px) {
-    #weather,
-    #reviews, .forecast-card-container {
-        flex-direction: column;
-    }
-
-    #weather{
-        margin: 70% 0 70% 0;
-    }
 }

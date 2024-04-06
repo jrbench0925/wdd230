@@ -44,32 +44,34 @@
         </div>
     </div>
     <main>
-        <div id="weather-container">
-            <div id="high-temp-message"></div>
-            <div id="weather" class="weather">
-                <div id="current-weather" class="current-weather"></div>
-                <div id="weather-forecast" class="weather-forecast"></div>
+        <div class="container">
+            <div id="weather-container">
+                <div id="high-temp-message"></div>
+                <div id="weather" class="weather">
+                    <div id="current-weather" class="current-weather"></div>
+                    <div id="weather-forecast" class="weather-forecast"></div>
+                </div>
             </div>
-        </div>
-        <div id="eye-catcher">
-            <picture>
-                <source media="(max-width: 400px)" srcset="images/beach-small.webp">
-                <source media="(max-width: 680px)" srcset="images/beach-medium.webp">
-                <source media="(max-width: 960px)" srcset="images/beach-large.webp">
-                <img src="images/beach-large.webp" alt="Arial photo" loading="lazy">
-            </picture>
+            <div id="eye-catcher">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/beach-small.webp">
+                    <source media="(max-width: 680px)" srcset="images/beach-medium.webp">
+                    <source media="(max-width: 960px)" srcset="images/beach-large.webp">
+                    <img src="images/beach-large.webp" alt="Arial photo" loading="lazy">
+                </picture>
 
+            </div>
+            <div id="reservations">
+                <h2>Check out our selection of vehicles available to rent<br>
+                    <a href="reservations.html" id="reservation-banner" class="flash">Don't miss out on the fun!
+                        Make a
+                        reservation
+                        today </a>
+                </h2>
+                <div id="vehicles-main" class="vehicles-grid"></div>
+            </div>
+            <div id="reviews"></div>
         </div>
-        <div id="reservations">
-            <h2>Check out our selection of vehicles available to rent<br>
-                <a href="reservations.html" id="reservation-banner" class="flash">Don't miss out on the fun!
-                    Make a
-                    reservation
-                    today </a>
-            </h2>
-            <div id="vehicles-main" class="vehicles-grid"></div>
-        </div>
-        <div id="reviews"></div>
     </main>
     <footer>
         <div class="social">

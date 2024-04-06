@@ -3,15 +3,14 @@
     --primary-color: #1cbab7;
     --secondary-color: #0f2a72;
     --third-color: #328d8d;
-    --table-head: #418cc1;
     --fourth-color: #7BAFD4;
+    --table-head: #418cc1;
     --text-color: #000000;
+    --secondary-text: #faebd7;
     --border-color: #000000;
     --link-hover-color: #4B9CD3;
-    --secondary-text: #faebd7;
-}
 
-/*Used on all pages */
+}
 
 html,
 body {
@@ -31,8 +30,9 @@ header {
     width: 100%;
 }
 
-#high-temp-message {
-    text-align: center;
+header img {
+    max-width: 75px;
+    height: auto;
 }
 
 footer {
@@ -43,9 +43,10 @@ footer {
     align-items: center;
 }
 
-header img {
-    max-width: 75px;
-    height: auto;
+#high-temp-message {
+    text-align: center;
+    background-color: red;
+    border: solid;
 }
 
 a {
@@ -55,11 +56,6 @@ a {
 
 a:hover {
     font-size: 1.25em;
-}
-
-#high-temp-message {
-    background-color: red;
-    border: solid;
 }
 
 .tempButton {
@@ -368,8 +364,30 @@ th {
     margin-left: 2px;
 }
 
+@media only screen and (max-width: 798px) {
 
-/* end use all */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forecast-card-container,
+    #weather,
+    #reviews {
+        flex-direction: column;
+    }
+
+    #weather {
+        margin-top: 575px;
+    }
+
+    .forecast-card-container {
+        margin-bottom: 570px;
+    }
+
+}
+
+
 
 @media only screen and (max-width: 469px) {
 
@@ -380,7 +398,7 @@ th {
     .vehicle-info img {
         max-width: 100px;
     }
-    
+
     #headerElement {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -401,16 +419,6 @@ th {
         display: none;
     }
 
-    #weather,
-    #reviews {
-        flex-direction: column;
-    }
-
-    .forecast-card-container {
-        flex-direction: column;
-        width: 100%;
-    }
-
     .vehicles-grid {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -422,15 +430,4 @@ th {
     #rental-weather {
         margin: 20vh 0 50vh 0;
     }
-
-    #current-weather {
-        margin-top: 20vh;
-
-    }
-
-    #weather-container {
-        margin-bottom: 50vh;
-
-    }
-
 }
