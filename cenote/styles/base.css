@@ -400,6 +400,14 @@ th {
         flex-direction: column;
     }
 
+    #current-weather {
+        margin-top: 100px;
+    }
+
+    .eye-catcher {
+        margin-top: 425px;
+    }
+
     .forecast-card-container {
         flex-direction: column;
         width: 100%;
@@ -412,13 +420,4 @@ th {
     .island-map img {
         max-width: 90%;
     }
-
-    #current-weather {
-        margin-top: 35%;
-    }
-
-    .forecast-card-container {
-        margin-bottom: 65%;
-    }
-
 }
