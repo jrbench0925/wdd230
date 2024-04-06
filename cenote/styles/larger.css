@@ -14,10 +14,25 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .reservation-details {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .reservation-info {
+        display: flex;
+        flex-wrap: wrap;
         gap: 10px;
+        align-items: stretch;
+        margin: 0 10px 0 10px;
+    }
+
+    .rental-info,
+    .reservation-details {
+        flex: 1;
+    }
+
+    .rental-info h2 {
+        text-align: center;
+    }
+
+    #vehicles {
+        margin: 10px 0 10px 0;
     }
 
 }

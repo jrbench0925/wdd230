@@ -162,12 +162,79 @@ a:hover {
 #review-3,
 #review-4,
 .vehicle-card,
-.reservation-details section {
+.reservation-details,
+.rental-info,
+.reservation-header,
+.customer-info,
+.trip-details {
     box-shadow: 0 4px 8px 0;
     border: 2px solid var(--border-color);
     border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+textarea {
+    width: 100%;
+    height: auto;
+    padding: 5px 5px 5px 0;
+}
+
+
+.pickup {
+    text-align: left;
+}
+
+.pickup input {
+    float: left;
+    margin-top: 5px;
+}
+
+.customer-info label,
+.customer-info input,
+.trip-details select,
+.trip-details label {
+    padding: 5px;
+}
+
+.submitBtn {
+    border: none;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.reservation-header {
+    text-align: center;
+    margin: 5px 10px 5px 10px;
+}
+
+.formHeader,
+.vehicle-form {
+    border: 2px var(--border-color);
+    border-radius: 10px;
     padding: 10px;
     background-color: var(--primary-color);
+    font-size: 1.25em;
+}
+
+.submit-reservation {
+    padding: 10px;
+}
+
+.customer-info,
+.trip-details {
+    display: inline-grid;
+}
+
+.customer-info label,
+.trip-details label {
+    display: flex;
+    flex-direction: column;
+}
+
+#current-weather h3 {
+    text-wrap: auto;
 }
 
 .island-map {
@@ -205,6 +272,12 @@ a:hover {
 .logo {
     width: 75px;
     height: auto;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 7%;
 }
 
 .nav-link {
@@ -265,13 +338,32 @@ th {
     background-color: var(--table-head);
 }
 
-.reservation-details {
-    margin-bottom: 10px;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+.reservation-info,
+.reservation-details,
+.reservation-container {
+    padding: 20px;
+}
+
+.reservation-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* end use all */
 
 @media only screen and (max-width: 469px) {
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 
     .vehicle-info img {
         max-width: 100px;
@@ -315,13 +407,7 @@ th {
         margin: 350px 0 500px 0;
     }
 
-    .rental-info {
-        margin-bottom: 15px;
-    }
 
-    .reservation-details {
-        margin: 0 15px 0 20px;
-    }
 
     .island-map img {
         max-width: 90%;

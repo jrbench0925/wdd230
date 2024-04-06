@@ -33,7 +33,7 @@ async function displayWeather() {
         const currentWeatherSection = document.getElementById('current-weather');
         currentWeatherSection.innerHTML = `
             <h2>Current Weather</h2>
-            <p>${temperatureC}&deg;C (${temperatureF}&deg;F</p>
+            <p>${temperatureC}&deg;C (${temperatureF}&deg;F)</p>
             <p>${humidity}% Humidity</p>
             <p>${skyConditions}</p>
             <img src="${icon}" alt="Weather Icon">
@@ -96,11 +96,10 @@ async function displayHighTemp() {
         const highTempC = ((highTempF - 32) * 5 / 9);
 
         const highTempMessage = document.getElementById('high-temp-message');
-        if (highTempMessage) {
-            highTempMessage.innerHTML = `<h1>Today's high temperature: ${highTempC.toFixed(0)}&deg;C (${highTempF.toFixed(0)}&deg;F) <button id="tempButton" class="tempButton">&#10006</button></h1>`;
-        } else {
-            console.error('Element with ID "high-temp-message" not found.');
-        }
+        highTempMessage.innerHTML = `<h1>Today's high temperature: ${highTempC.toFixed(0)}&deg;C (${highTempF.toFixed(0)}&deg;F) <button id="tempButton" class="tempButton">&#10006</button></h1>`;
+
+    } else {
+        console.error('Temperature data not found.');
     }
 }
 

@@ -31,28 +31,159 @@
         <nav class="nav-links">
             <a href="index.html" class="nav-link">Home</a>
             <a href="rentals.html" class="nav-link">Rentals</a>
-            <a href="reservations.html" class="nav-link">Reservations</a>
+            <a href="reservations.html" class="nav-link active">Reservations</a>
             <a href="contact.html" class="nav-link">Contact</a>
             </div>
 
     </header>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram"></a>
+            <a href="http://www.tripadvisor.com" target="_blank"><img src="images/trip-advisor.webp"
+                    alt="Trip Advisor"></a>
+        </div>
+    </div>
     <main>
-        <h1> Reservations Form</h1>
-        <section class="rental-info">
-            <h2>Rental Services and Agreements</h2>
-            <ul>
-                <li>A $50 security deposit is required to confirm reservations.</li>
-                <li>A valid driver's license is required in hand at the time of rental.</li>
-                <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
-                <li>Fuel charge is not included.</li>
-                <li>Unlimited mileage.</li>
-                <li>Liability insurance is included.</li>
-                <li>Damage insurance is available for purchase.</li>
-                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
-                <li>Rentals may be returned to either of our convenient locaitons.</li>
-            </ul>
-        </section>
+        <div class="reservation-grid">
+            <div class="reservation-header">
+                <h1> Reservations Form</h1>
+            </div>
+            <div class="eye-catcher">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/beach-small.webp">
+                    <source media="(max-width: 680px)" srcset="images/beach-medium.webp">
+                    <source media="(max-width: 960px)" srcset="images/beach-large.webp">
+                    <img src="images/jeep-beach.webp" alt="Arial photo" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="reservation-info">
+                <section class="rental-info">
+                    <h2>Rental Services and Agreements</h2>
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid driver's license is required in hand at the time of rental.</li>
+                        <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+                        <li>Fuel charge is not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is included.</li>
+                        <li>Damage insurance is available for purchase.</li>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                        <li>Rentals may be returned to either of our convenient locaitons.</li>
+                    </ul>
+                </section>
+
+                <div class="reservation-details">
+                    <section class="island-map">
+                        <h2>Points of Interest</h2>
+                        <img src="images/cozumel-island-map.webp" alt="Island Map" loading="lazy">
+                    </section>
+                </div>
+            </div>
+            <div class="reservation-container">
+                <form method="get" action="thankyou.html">
+                    <fieldset class="customer-info">
+                        <legend class="formHeader">Reservation Details</legend>
+                        <label for="fname" class="details">First Name <input type="text" id="fname" name="fname"
+                                required></label>
+                        <label for="lname" class="details">Last Name <input type="text" id="lname" name="lname"
+                                required></label>
+                        <label for="email" class="details">Email <input type="email" id="email" name="email"
+                                placeholder="email@youremail.com" title="Please enter a valid email address."
+                                required></label>
+                        <label for="phone" class="details">Phone Number <input type="tel" id="phone" name="phone"
+                                required></label>
+                        <label for="cruise-line" class="details">Cruise Line <input type="text" id="cruise-line"
+                                name="cruise-line" placeholder="optional"></label>
+                        <label for="trip-start">Start date: <input type="date" id="trip-start" name="trip-start"
+                                value="2024-04-01" min="2024-04-01" max="2025-12-31"></label>
+                        <label for="trip-end">End date: <input type="date" id="trip-end" name="trip-end"
+                                value="2024-04-01" min="2024-04-01" max="2025-12-31"></label>
+                        <!-- Add country dropdown-->
+                        <label for="comments">Special Requests<textarea id="comments" name="comments"
+                                placeholder="List any Special Requests."></textarea></label>
+                    </fieldset>
+                    <fieldset class=" trip-details">
+                        <legend class="vehicle-form">Vehicles</legend>
+                        <label for="metro">Honda Metro Scooter</label>
+                        <select name="metro" id="metro">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <label for="dio">Honda Dio Scooter</label>
+                        <select name"dio" id="dio">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <label for="pcx150">Honda PCX150 Scooter</label>
+                        <select name="pcx150" id="pcx150">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <label for="pioneer">Honda Pioneer ATV</label>
+                        <select name="pioneer" id="pioneer">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <label for="jeep2">2 Door Jeep Wrangler</label>
+                        <select name="jeep2" id="jeep2">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <label for="jeep4">4 Door Jeep Wrangler</label>
+                        <select name="jeep4" id="jeep4">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <section class="pickup">
+                            <p>Pickup/Delivery Location</p>
+                            <input type="radio" id="cruise-location" name="location"
+                                value="cruise-location"><label>Terminal
+                                Puerta Maya</label>
+                            <input type="radio" id="ferry-dock" name="location" value="ferry-dock"><label
+                                for="ferry-dock">Cozumel Ferry dock</label>
+                            <input type="radio" id="hotel" name="location" value="hotel"><label
+                                for="hotel">Hotel</label>
+                            <input type="radio" id="rental" name="location" value="rental"><label
+                                for="rental">RentalProperty</label>
+                        </section>
+                    </fieldset>
+                    <div class="button-container">
+                        <fieldset class="submitBtn">
+                            <input type="submit" class="submit-reservation" value="Finalize Reservation">
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        </div>
     </main>
     <footer>
         <div class="social">
