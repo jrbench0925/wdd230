@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://jrbench0925.github.io/wdd230/scoot/index.html">
     <meta property="og:image" content="">
 
-    <link rel="icon" href="favicon.ico"> <!-- add favicon-->
+    <link rel="icon" href="images/favicon.ico"> <!-- add favicon-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -45,36 +45,27 @@
         </div>
     </div>
     <main>
-        <div class="reservation-grid">
+            <section class="rental-info">
+                <h2>Rental Services and Agreements</h2>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid driver's license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either of our convenient locaitons.</li>
+                </ul>
+            </section>
+        <div id="reservation-grid">
             <div class="reservation-header">
                 <h1> Reservations Form</h1>
             </div>
-            <div class="reservation-info">
-                <section class="rental-info">
-                    <h2>Rental Services and Agreements</h2>
-                    <ul>
-                        <li>A $50 security deposit is required to confirm reservations.</li>
-                        <li>A valid driver's license is required in hand at the time of rental.</li>
-                        <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
-                        <li>Fuel charge is not included.</li>
-                        <li>Unlimited mileage.</li>
-                        <li>Liability insurance is included.</li>
-                        <li>Damage insurance is available for purchase.</li>
-                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
-                        <li>Rentals may be returned to either of our convenient locaitons.</li>
-                    </ul>
-                </section>
-
-                <div class="reservation-details">
-                    <section class="island-map">
-                        <h2>Points of Interest</h2>
-                        <img src="images/cozumel-island-map.webp" alt="Island Map" loading="lazy">
-                    </section>
-                </div>
-            </div>
             <div class="reservation-container">
-                <form method="get" action="thankyou.html">
+                <form method="get" action="reservation-confirmed.html">
                     <fieldset class="customer-info">
                         <legend class="formHeader">Reservation Details</legend>
                         <label for="fname" class="details">First Name <input type="text" id="fname" name="fname"
@@ -99,7 +90,7 @@
                     <fieldset class=" trip-details">
                         <legend class="vehicle-form">Vehicles</legend>
                         <label for="metro">Honda Metro Scooter</label>
-                        <select name="metro" id="metro">
+                        <select name="metro" id="metro" required>
                             <option value="0"></option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -108,7 +99,7 @@
                             <option value="5">5</option>
                         </select>
                         <label for="dio">Honda Dio Scooter</label>
-                        <select name"dio" id="dio">
+                        <select name="dio" id="dio" required>
                             <option value="0"></option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -117,7 +108,7 @@
                             <option value="5">5</option>
                         </select>
                         <label for="pcx150">Honda PCX150 Scooter</label>
-                        <select name="pcx150" id="pcx150">
+                        <select name="pcx150" id="pcx150" required>
                             <option value="0"></option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -126,7 +117,7 @@
                             <option value="5">5</option>
                         </select>
                         <label for="pioneer">Honda Pioneer ATV</label>
-                        <select name="pioneer" id="pioneer">
+                        <select name="pioneer" id="pioneer" required>
                             <option value="0"></option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -135,7 +126,7 @@
                             <option value="5">5</option>
                         </select>
                         <label for="jeep2">2 Door Jeep Wrangler</label>
-                        <select name="jeep2" id="jeep2">
+                        <select name="jeep2" id="jeep2" required>
                             <option value="0"></option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -144,7 +135,7 @@
                             <option value="5">5</option>
                         </select>
                         <label for="jeep4">4 Door Jeep Wrangler</label>
-                        <select name="jeep4" id="jeep4">
+                        <select name="jeep4" id="jeep4" required>
                             <option value="0"></option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -157,7 +148,7 @@
                             <input type="radio" id="cruise-location" name="location"
                                 value="cruise-location"><label>Terminal
                                 Puerta Maya</label>
-                            <input type="radio" id="ferry-dock" name="location" value="ferry-dock"><label
+                            <input type="radio" id="ferry-dock" name="location" value="ferry-dock" required><label
                                 for="ferry-dock">Cozumel Ferry dock</label>
                             <input type="radio" id="hotel" name="location" value="hotel"><label
                                 for="hotel">Hotel</label>
@@ -178,10 +169,12 @@
     </main>
     <footer>
         <div class="social">
-            <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook" loading="lazy"></a>
-            <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram" loading="lazy"></a>
-            <a href="http://www.tripadvisor.com" target="_blank"><img src="images/trip-advisor.webp"
-                    alt="Trip Advisor" loading="lazy"></a>
+            <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook"
+                    loading="lazy"></a>
+            <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram"
+                    loading="lazy"></a>
+            <a href="http://www.tripadvisor.com" target="_blank"><img src="images/trip-advisor.webp" alt="Trip Advisor"
+                    loading="lazy"></a>
             <!--address-->
         </div>
         <p>&copy; <span id="copyright"></span>Jeff Bench</p>
