@@ -11,7 +11,9 @@
     --secondary-text: #faebd7;
     --border-color: #000000;
     --link-hover-color: #4B9CD3;
+    --secondary-background: #dccfbb;
 }
+
 
 html,
 body {
@@ -199,8 +201,10 @@ a:hover {
     margin: 1em 0 2em 0;
 }
 
-#reservation-grid {
+#reservation-grid,
+#rental-background {
     max-width: 75%;
+    background-color: var(--secondary-background);
     margin: 10px auto 10px auto;
     border: 4px solid var(--border-color);
     border-radius: 10px;
