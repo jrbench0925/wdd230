@@ -499,19 +499,14 @@ th {
     }
 
     #rental-weather {
-        margin: 70vh 0 10vh 0;
+        margin:  0 0 10vh 0;
     }
 
     #weather {
-        margin-bottom: 140vh;
+        margin-bottom: 90vh;
     }
 
     .container {
         display: block;
     }
-
-    #weather-forecast {
-        margin-bottom: 200px;
-    }
-
 }
