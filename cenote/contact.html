@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cenote Wheels Cozumel Recreational Vehicle Rentals">
+    <meta name="description" content="Cenote Recreational Vehicle Rentals">
     <meta name="author" content="Jeff Bench">
     <title>Cenote Recreational Vehicle Rentals</title>
 
@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://jrbench0925.github.io/wdd230/scoot/index.html">
     <meta property="og:image" content="">
 
-    <link rel="icon" href="/images/favicon.ico"> <!-- add favicon-->
+    <link rel="icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -44,7 +44,27 @@
         </div>
     </div>
     <main>
-        <h1> Contact INFO</h1>
+        <div class="contact-card">
+            <section class="contact-info">
+                <h1> Contact Information</h1>
+                <h2>Cenote Recreational Vehicle Rentals</h2>
+                <p>Address: 2119 Island Drive Cozumel, Mexico</p>
+                <p>Phone: 1-800-Rent-A-Scooter</p>
+                <p>Email: contact@cenoterentals.com</p>
+            </section>
+            <section class="contact-form">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name </label>
+                    <input type="text" id="name" required>
+                    <label for="email">Email </label>
+                    <input type="email" id="email" required>
+                    <label for="comments" id="comments"><h2>Comments</h2></label>
+                    <textarea id="comments" name="comments" required></textarea><br>
+                    <button type="submit" id="comment-button">Contact Us</button>
+                </form>
+            </section>
+        </div>
         <div class="map-container">
             <iframe class="map"
                 src="https://www.google.com/maps/d/u/0/embed?mid=1GVJLXBHDBFk8icuOrX-l_I4pgqA2vS8&ehbc=2E312F&noprof=1"

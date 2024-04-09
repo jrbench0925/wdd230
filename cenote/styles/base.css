@@ -162,7 +162,8 @@ a:hover {
 .rental-info,
 .reservation-header,
 .customer-info,
-.trip-details {
+.trip-details,
+.contact-card {
     box-shadow: 0 4px 8px 0;
     border: 2px solid var(--border-color);
     border-radius: 10px;
@@ -174,6 +175,26 @@ a:hover {
     margin: 10px auto 10px auto;
 }
 
+.contact-card {
+    max-width: 50%;
+    margin: 10px auto 10px auto;
+}
+
+.contact-card {
+    padding: 0 30px 20px 30px;
+}
+
+.contact-card h1,
+.contact-card h2 {
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 1em;
+}
+
+.contact-card h1{
+    margin: 1em 0 2em 0;
+}
+
 #reservation-grid {
     max-width: 75%;
     margin: 10px auto 10px auto;
@@ -181,10 +202,20 @@ a:hover {
     border-radius: 10px;
 }
 
-.submit-reservation {
+.submit-reservation,
+#comment-button {
     background-color: var(--primary-color);
     font-weight: bold;
     padding: 1em;
+}
+
+#comment-button {
+    width: 100%;
+}
+
+.contact-info {
+    line-height: .75em;
+    text-align: center;
 }
 
 textarea {
@@ -193,20 +224,38 @@ textarea {
     padding: 5px 5px 5px 0;
 }
 
-.pickup {
-    text-align: left;
+.contact-card textarea {
+    max-width: 100%;
+    min-height: 10em;
+    margin-bottom: 2em;
 }
 
-.pickup input {
+.contact-card input {
+    width: 100%;
+    padding: 10px;
+    min-height: 1.5em;
+}
+
+.pickup input,
+.insurance input {
     float: left;
     margin-top: 5px;
+    margin-right: 10px;
 }
 
 .customer-info label,
 .customer-info input,
 .trip-details select,
-.trip-details label {
+.trip-details label,
+.conact-form label,
+.contact-form input {
     padding: 5px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 5px 0 5px 0;
+    font-size: 1.25em;
 }
 
 .submitBtn {
@@ -396,7 +445,7 @@ th {
         margin-bottom: 570px;
     }
 
-    #current-weather{
+    #current-weather {
         margin-top: 150px;
     }
 }
