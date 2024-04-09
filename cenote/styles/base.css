@@ -506,4 +506,12 @@ th {
         margin-bottom: 140vh;
     }
 
+    .container {
+        display: block;
+    }
+
+    #weather-forecast {
+        margin-bottom: 200px;
+    }
+
 }
