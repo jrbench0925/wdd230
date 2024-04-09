@@ -75,7 +75,7 @@ a:hover {
 }
 
 .map-container {
-    width: 55%;
+
     margin: auto auto 10px auto;
     height: 500px;
     overflow: hidden;
@@ -182,8 +182,7 @@ a:hover {
 }
 
 .contact-card {
-    max-width: 50%;
-    margin: 10px auto 10px auto;
+    margin: 20px auto 20px auto;
 }
 
 .contact-card {
@@ -202,7 +201,8 @@ a:hover {
 }
 
 #reservation-grid,
-#rental-background {
+#rental-background,
+.contact-background {
     max-width: 75%;
     background-color: var(--secondary-background);
     margin: 10px auto 10px auto;
@@ -221,7 +221,7 @@ a:hover {
     width: 100%;
 }
 
-.contact-info {
+.contact-card {
     line-height: .75em;
     text-align: center;
 }
@@ -255,12 +255,12 @@ textarea {
 .customer-info input,
 .trip-details select,
 .trip-details label,
-.conact-form label,
-.contact-form input {
+.conact-card label,
+.contact-card input {
     padding: 5px;
 }
 
-.contact-form label {
+.contact-card label {
     display: block;
     margin: 5px 0 5px 0;
     font-size: 1.25em;
@@ -417,7 +417,8 @@ th {
 
 .reservation-info,
 .reservation-details,
-.reservation-container {
+.reservation-container,
+.contact-background {
     padding: 20px;
 }
 
