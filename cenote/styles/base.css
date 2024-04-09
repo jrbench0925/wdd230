@@ -447,16 +447,11 @@ th {
     }
 
     #weather {
-        margin-top: 65vh;
+        display: block;
     }
 
     .forecast-card-container {
         margin-bottom: 100vh;
-    }
-
-    #current-weather {
-        margin-top: 50vh;
-
     }
 
     #weather-forecast,
@@ -507,8 +502,8 @@ th {
         margin: 70vh 0 10vh 0;
     }
 
-    #current-weather {
-        margin-top: 20vh;
+    #weather {
+        margin-bottom: 140vh;
     }
 
 }
