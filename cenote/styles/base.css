@@ -82,9 +82,8 @@ a:hover {
 
 .map-container iframe {
     width: 100%;
-    height: 100%; /* Ensure iframe fills its container */
-    border: none; /* Remove iframe border */
-    position: absolute; /* Position iframe relative to its container */
+    height: 100%;
+    position: absolute; 
     top: 0;
     left: 0;
 }
