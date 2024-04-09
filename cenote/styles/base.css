@@ -83,7 +83,7 @@ a:hover {
 .map-container iframe {
     width: 100%;
     height: 100%;
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -195,7 +195,7 @@ a:hover {
     line-height: 1em;
 }
 
-.contact-card h1{
+.contact-card h1 {
     margin: 1em 0 2em 0;
 }
 
@@ -442,15 +442,21 @@ th {
     }
 
     #weather {
-        margin-top: 575px;
+        margin-top: 65vh;
     }
 
     .forecast-card-container {
-        margin-bottom: 570px;
+        margin-bottom: 100vh;
     }
 
     #current-weather {
-        margin-top: 150px;
+        margin-top: 50vh;
+
+    }
+
+    #weather-forecast,
+    #current-weather {
+        line-height: 1em;
     }
 }
 
@@ -497,7 +503,7 @@ th {
     }
 
     #current-weather {
-        margin-top: 15vh;
+        margin-top: 20vh;
     }
 
 }
