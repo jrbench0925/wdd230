@@ -16,12 +16,10 @@
     <meta property="og:url" content="https://jrbench0925.github.io/wdd230/scoot/index.html">
     <meta property="og:image" content="">
 
-    <link rel="icon" href="images/favicon.ico"> <!-- add favicon-->
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-
-
 </head>
 
 <body>
@@ -33,8 +31,7 @@
             <a href="rentals.html" class="nav-link">Rentals</a>
             <a href="reservations.html" class="nav-link active">Reservations</a>
             <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-
+        </nav>
     </header>
     <div class="sidebar" id="sidebar">
         <div class="sidebar-content">
@@ -46,28 +43,28 @@
     </div>
     <main>
         <div id="rental-background">
-        <section class="rental-info">
-            <h2>Rental Services and Agreements</h2>
-            <ul>
-                <li>A $50 security deposit is required for all reservations.</li>
-                <li>A valid driver's license is required in hand at the time of rental.</li>
-                <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
-                <li>Fuel charge is not included.</li>
-                <li>Unlimited mileage.</li>
-                <li>Liability insurance is included.</li>
-                <li>Optional damage insurance is available for purchase.</li>
-                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
-                <li>Rentals may be returned to either of our convenient locations.</li>
-            </ul>
-        </section>
+            <section class="rental-info">
+                <h2>Rental Services and Agreements</h2>
+                <ul>
+                    <li>A $50 security deposit is required for all reservations.</li>
+                    <li>A valid driver's license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Optional damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either of our convenient locations.</li>
+                </ul>
+            </section>
         </div>
         <div id="reservation-grid">
             <div class="reservation-header">
                 <h1> Reservations Form</h1>
             </div>
             <div class="reservation-container">
-                <form method="get" action="reservation-confirmed.html">
+                <form method="get" id="reservation-form" action="reservation-confirmed.html">
                     <fieldset class="customer-info">
                         <legend class="formHeader">Reservation Details</legend>
                         <label for="fname" class="details">First Name <input type="text" id="fname" name="fname"
@@ -75,18 +72,19 @@
                         <label for="lname" class="details">Last Name <input type="text" id="lname" name="lname"
                                 required></label>
                         <label for="email" class="details">Email <input type="email" id="email" name="email"
-                                placeholder="email@youremail.com" title="Please enter a valid email address."
-                                required></label>
+                                placeholder="email@youremail.com"
+                                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                                title="Please enter a valid email address." required></label>
                         <label for="phone" class="details">Phone Number <input type="tel" id="phone" name="phone"
-                                required></label>
+                                required pattern="[\d+]+" title="Please enter a valid phone number"></label>
                         <label for="cruise-line" class="details">Cruise Line <input type="text" id="cruise-line"
                                 name="cruise-line" placeholder="optional"></label>
                         <label for="trip-start">Start date: <input type="date" id="trip-start" name="trip-start"
-                                value="2024-04-01" min="2024-04-01" max="2025-12-31"></label>
+                                min="2024-04-10" max="2035-12-31"></label>
                         <label for="trip-end">End date: <input type="date" id="trip-end" name="trip-end"
-                                value="2024-04-01" min="2024-04-01" max="2025-12-31"></label>
+                                min="2024-04-10" max="2035-12-31"></label>
                         <label for="state">Home State or Country <input type="text" id="state" name="state"
-                                required></label>
+                                pattern="[a-zA-Z]{2,}" required></label>
                         <!-- Add country dropdown-->
                         <label for="comments">Special Requests<textarea id="comments" name="comments"
                                 placeholder="List any Special Requests."></textarea></label>
@@ -95,7 +93,7 @@
                         <legend class="vehicle-form">Vehicles</legend>
                         <label for="metro">Honda Metro Scooter</label>
                         <select name="metro" id="metro" required>
-                            <option disabled="disabled" selected="selected">Select Quantity</option>
+                            <option value="" disabled selected>Select Quantity</option>
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -105,7 +103,7 @@
                         </select>
                         <label for="dio">Honda Dio Scooter</label>
                         <select name="dio" id="dio" required>
-                            <option disabled="disabled" selected="selected">Select Quantity</option>
+                            <option value="" disabled selected>Select Quantity</option>
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -115,7 +113,7 @@
                         </select>
                         <label for="pcx150">Honda PCX150 Scooter</label>
                         <select name="pcx150" id="pcx150" required>
-                            <option disabled="disabled" selected="selected">Select Quantity</option>
+                            <option value="" disabled selected>Select Quantity</option>
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -125,7 +123,7 @@
                         </select>
                         <label for="pioneer">Honda Pioneer ATV</label>
                         <select name="pioneer" id="pioneer" required>
-                            <option disabled="disabled" selected="selected">Select Quantity</option>
+                            <option value="" disabled selected>Select Quantity</option>
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -135,7 +133,7 @@
                         </select>
                         <label for="jeep2">2 Door Jeep Wrangler</label>
                         <select name="jeep2" id="jeep2" required>
-                            <option disabled="disabled" selected="selected">Select Quantity</option>
+                            <option value="" disabled selected>Select Quantity</option>
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -145,7 +143,7 @@
                         </select>
                         <label for="jeep4">4 Door Jeep Wrangler</label>
                         <select name="jeep4" id="jeep4" required>
-                            <option disabled="disabled" selected="selected">Select Quantity</option>
+                            <option value="" disabled selected>Select Quantity</option>
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -154,7 +152,7 @@
                             <option value="5">5</option>
                         </select>
                         <section class="pickup">
-                            <p>Pickup/Delivery Location</p>
+                            <h3>Pickup/Delivery Location</h3>
                             <input type="radio" id="cruise-location" name="location"
                                 value="cruise-location"><label>Terminal
                                 Puerta Maya</label>
@@ -166,7 +164,7 @@
                                 for="rental">RentalProperty</label>
                         </section>
                         <section class="insurance">
-                            <p>Would you like Damage insurance?</p>
+                            <h3>Would you like Damage insurance?</h3>
                             <input type="radio" id="yes" name="insurance" value="yes" required><label>Yes</label>
                             <input type="radio" id="no" name="insurance" value="no"><label>No</label>
                         </section>
@@ -178,8 +176,6 @@
                     </div>
                 </form>
             </div>
-        </div>
-
         </div>
     </main>
     <footer>
@@ -194,7 +190,7 @@
         </div>
         <p>&copy; <span id="copyright"></span>Jeff Bench</p>
     </footer>
-
+    <script src="scripts/validate-form.js"></script>
 </body>
 
 </html>

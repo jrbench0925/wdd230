@@ -52,27 +52,31 @@
                     <p>Address: 2119 Island Drive Cozumel, Mexico</p>
                     <p>Phone: 1-800-Rent-A-Scooter</p>
                     <p>Email: contact@cenoterentals.com</p>
+                </section>
             </div>
             <div class="contact-card">
                 <h2>Contact Us</h2>
-                <form>
+                <form method="get" id="contact-form" action="contact-confirmed.html">
                     <label for="name">Name </label>
                     <input type="text" id="name" required>
                     <label for="email">Email </label>
                     <input type="email" id="email" required>
-                    <label for="comments" id="comments">
-                        <h2>Comments</h2>
-                    </label>
-                    <textarea id="comments" name="comments" required></textarea><br>
-                    <button type="submit" id="comment-button">Contact Us</button>
-                </form>
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" required></textarea>
+                    </filedset>
             </div>
-        <div class="map-container">
-            <iframe class="map"
-                src="https://www.google.com/maps/d/u/0/embed?mid=1GVJLXBHDBFk8icuOrX-l_I4pgqA2vS8&ehbc=2E312F&noprof=1"
-                loading="lazy"></iframe>
+            <div class="button-container">
+                <fieldset class="submitBtn">
+                    <button type="submit" id="comment-button">Contact Us</button>
+                </fieldset>
+            </div>
+            </form>
+            <div class="map-container">
+                <iframe class="map"
+                    src="https://www.google.com/maps/d/u/0/embed?mid=1GVJLXBHDBFk8icuOrX-l_I4pgqA2vS8&ehbc=2E312F&noprof=1"
+                    loading="lazy"></iframe>
+            </div>
         </div>
-    </div>
     </main>
     <footer>
         <div class="social">
