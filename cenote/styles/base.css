@@ -294,9 +294,12 @@ textarea {
 
 .customer-info,
 .submitBtn {
-    max-width: 75%; /* Adjust as needed */
-    margin: 10px auto; /* Adjust margin as needed */
-    padding: 20px; /* Adjust padding as needed */
+    max-width: 75%;
+    /* Adjust as needed */
+    margin: 10px auto;
+    /* Adjust margin as needed */
+    padding: 20px;
+    /* Adjust padding as needed */
 }
 
 .contact-card label {
