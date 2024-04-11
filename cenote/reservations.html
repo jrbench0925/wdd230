@@ -1,3 +1,4 @@
+reservations.html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +14,7 @@
     <meta property="og:description"
         content="Embark on a journey like no other with Cenote Recreational Vehicle Rentals in Cozumel. Discover hidden treasures and uncover the mysteries of this enchanting Caribbean island as you traverse its diverse landscapes. From pristine beaches to lush jungles, your adventure awaits with Cenote's expertly curated packages and eco-friendly approach. Dive into the heart of Cozumel's natural marvels and create memories to last a lifetime with Cenote Recreational Vehicle Rentals.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jrbench0925.github.io/wdd230/scoot/index.html">
+    <meta property="og:url" content="https://jrbench0925.github.io/wdd230/cenote/index.html">
     <meta property="og:image" content="">
 
     <link rel="icon" href="images/favicon.ico">
@@ -68,9 +69,9 @@
                     <fieldset class="customer-info">
                         <legend class="formHeader">Reservation Details</legend>
                         <label for="fname" class="details">First Name <input type="text" id="fname" name="fname"
-                                required></label>
+                                pattern="[a-zA-Z]" required></label>
                         <label for="lname" class="details">Last Name <input type="text" id="lname" name="lname"
-                                required></label>
+                                pattern="[a-zA-Z]" required></label>
                         <label for="email" class="details">Email <input type="email" id="email" name="email"
                                 placeholder="email@youremail.com"
                                 pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
@@ -187,11 +188,18 @@
                     loading="lazy"></a>
             <a href="http://www.tripadvisor.com" target="_blank"><img src="images/trip-advisor.webp" alt="Trip Advisor"
                     loading="lazy"></a>
-            <!--address-->
         </div>
-        <p>&copy; <span id="copyright"></span>Jeff Bench</p>
+        <p>&copy; <span id="copyright"></span> Cenote Recreational Vehicle Rentals</p>
+        <div class="location-container">
+            <p>Locations:
+            <p>1233 Cosumel Ferry Dock #2119</p>
+            <p>19 el Centro de Cozumel</p>
+        </div>
+        <p>Phone: 1-800-Rent-A-Scooter</p>
+        <a href="attributions.html">Attributions</a>
     </footer>
     <script src="scripts/validate-form.js"></script>
+    <script src="scripts/get-date.js"></script>
 </body>
 
 </html>

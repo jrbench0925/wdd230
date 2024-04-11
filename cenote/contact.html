@@ -1,3 +1,4 @@
+contact.html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +14,7 @@
     <meta property="og:description"
         content="Embark on a journey like no other with Cenote Recreational Vehicle Rentals in Cozumel. Discover hidden treasures and uncover the mysteries of this enchanting Caribbean island as you traverse its diverse landscapes. From pristine beaches to lush jungles, your adventure awaits with Cenote's expertly curated packages and eco-friendly approach. Dive into the heart of Cozumel's natural marvels and create memories to last a lifetime with Cenote Recreational Vehicle Rentals.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jrbench0925.github.io/wdd230/scoot/index.html">
+    <meta property="og:url" content="https://jrbench0925.github.io/wdd230/cenote/index.html">
     <meta property="og:image" content="">
 
     <link rel="icon" href="/images/favicon.ico">
@@ -58,12 +59,16 @@
                 <h2>Contact Us</h2>
                 <form method="get" id="contact-form" action="contact-confirmed.html">
                     <label for="name">Name </label>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="name" pattern="[a-zA-Z]" required>
                     <label for="email">Email </label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" placeholder="email@youremail.com"
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+                    <label for="phone">Phone Number </label>
+                    <input type="tel" id="phone" name="phone" required pattern="[\d+]+"
+                        title="Please enter a valid phone number"></label>
                     <label for="comments">Comments</label>
                     <textarea id="comments" name="comments" required></textarea>
-                    </filedset>
+                    </fieldset>
             </div>
             <div class="button-container">
                 <fieldset class="submitBtn">
@@ -80,15 +85,23 @@
     </main>
     <footer>
         <div class="social">
-            <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
-            <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram"></a>
-            <a href="http://www.tripadvisor.com" target="_blank"><img src="images/trip-advisor.webp"
-                    alt="Trip Advisor"></a>
-            <!--address-->
+            <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook"
+                    loading="lazy"></a>
+            <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram"
+                    loading="lazy"></a>
+            <a href="http://www.tripadvisor.com" target="_blank"><img src="images/trip-advisor.webp" alt="Trip Advisor"
+                    loading="lazy"></a>
         </div>
-        <p>&copy; <span id="copyright"></span>Jeff Bench</p>
+        <p>&copy; <span id="copyright"></span> Cenote Recreational Vehicle Rentals</p>
+        <div class="location-container">
+            <p>Locations:
+            <p>1233 Cosumel Ferry Dock #2119</p>
+            <p>19 el Centro de Cozumel</p>
+        </div>
+        <p>Phone: 1-800-Rent-A-Scooter</p>
+        <a href="attributions.html">Attributions</a>
     </footer>
-
+    <script src="scripts/get-date.js"></script>
 </body>
 
 </html>

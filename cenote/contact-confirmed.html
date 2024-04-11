@@ -1,4 +1,3 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,34 +45,16 @@ index.html
                     loading="lazy"></a>
         </div>
     </div>
-    <main>
-        <div class="container">
-            <div id="weather-container">
-                <div id="high-temp-message"></div>
-                <div id="weather" class="weather">
-                    <div id="current-weather" class="current-weather"></div>
-                    <div id="weather-forecast" class="weather-forecast"></div>
-                </div>
-            </div>
-            <div id="eye-catcher">
-                <picture>
-                    <source media="(max-width: 400px)" srcset="images/jeep-beach-small.webp">
-                    <source media="(max-width: 680px)" srcset="images/jeep-beach-medium.webp">
-                    <source media="(max-width: 960px)" srcset="images/jeep-beach-large.webp">
-                    <img src="images/jeep-beach-large.webp" alt="Jeep on Beach" loading="lazy">
-                </picture>
 
+    <main>
+        <div class="confirmation">
+            <div class="information">
+                <h1>Thank you for contacting us.</h1>
+                <h2>We will reach out to you as soon as possible to address any concerns.</h2>
             </div>
-            <div id="reservations">
-                <h2>Check out our selection of vehicles available to rent<br>
-                    <a href="reservations.html" id="reservation-banner" class="flash">Don't miss out on the fun!
-                        Make a
-                        reservation
-                        today </a>
-                </h2>
-                <div id="vehicles-main" class="vehicles-grid"></div>
+            <div class="confirmation-logo">
+                <img src="images/logo.webp" alt="Cenote Logo" class="logo-image" loading="lazy">
             </div>
-            <div id="reviews"></div>
         </div>
     </main>
     <footer>
@@ -87,15 +68,14 @@ index.html
         </div>
         <p>&copy; <span id="copyright"></span> Cenote Recreational Vehicle Rentals</p>
         <div class="location-container">
-            <p>Phone: 1-800-Rent-A-Scooter</p>
-            <p>Email: contact@cenoterentals.com</p>
+            <p>Locations:
+            <p>1233 Cosumel Ferry Dock #2119</p>
+            <p>19 el Centro de Cozumel</p>
         </div>
+        <p>Phone: 1-800-Rent-A-Scooter</p>
         <a href="attributions.html">Attributions</a>
     </footer>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/banner.js"></script>
-    <script src="scripts/reviews.js"></script>
-    <script src="scripts/rentals.js"></script>
+    <script src="scripts/validate-form.js"></script>
     <script src="scripts/get-date.js"></script>
 </body>
 
