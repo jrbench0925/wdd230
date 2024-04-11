@@ -292,16 +292,6 @@ textarea {
     padding: 5px;
 }
 
-.customer-info,
-.submitBtn {
-    max-width: 75%;
-    /* Adjust as needed */
-    margin: 10px auto;
-    /* Adjust margin as needed */
-    padding: 20px;
-    /* Adjust padding as needed */
-}
-
 .contact-card label {
     display: block;
     margin: 5px 0 5px 0;
